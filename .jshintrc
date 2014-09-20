@@ -1,0 +1,19 @@
+{
+  "strict": true,
+  "undef": true,
+  "node": true,
+  "browser": true,
+  "globals"   : {
+    /* MOCHA */
+    "describe"   : false,
+    "it"         : false,
+    "before"     : false,
+    "beforeEach" : false,
+    "after"      : false,
+    "afterEach"  : false,
+    /* MAPS */
+    "alert"      : false,
+    "google"     : false,
+    "angular"    : false
+  }
+}

@@ -3,7 +3,7 @@
 var User = require('../dbmodels/user-model');
 
 module.exports = function(app, passport){
-  var baseUrl = '/api/users';
+  var baseUrl = '/api/v_0_0_1/users';
 
   app.post(baseUrl, function(req, res){
     User.findOne({'local.email' : req.body.email}, function(err, user){

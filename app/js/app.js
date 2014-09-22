@@ -12,7 +12,7 @@ require('./controllers/home-controller')(spontaneousApp);
 
 spontaneousApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
-  .when('/', {
+  .when('/home', {
     templateUrl: 'home.html',
     controller: 'homeController'
   })

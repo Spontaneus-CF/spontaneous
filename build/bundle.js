@@ -13,7 +13,7 @@ require('./controllers/home-controller')(spontaneousApp);
 
 spontaneousApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
-  .when('/', {
+  .when('/home', {
     templateUrl: 'home.html',
     controller: 'homeController'
   })
@@ -23359,8 +23359,11 @@ var styleDirective = valueFn({
 "use strict";
 
 module.exports = function(app){
-  app.controller('homeController', function($scope){
-
+  app.controller('homeController', function($scope, $cookies, $location){
+    $scope.logout = function(){
+      $cookies.jwt = null;
+      $location.path('/signin'); 
+    };
   });
 };
 
@@ -23370,19 +23373,20 @@ module.exports = function(app){
 module.exports = function(app) {
   app.controller('usersController', function($scope, $http, $cookies, $base64, $location){
     if($location.path() === '/signout') $cookies.jwt = null;
-    if(!$cookies.jwt || $cookies.jwt.length >=10) return $location.path('/'); //Need to specify homepage path.
+    if(!$cookies.jwt || $cookies.jwt.length >=10) return $location.path('/home'); 
 
-    if($location.path() === '/signup') $scope.newuser = true;
+    if($location.path() === '/signin') $scope.newuser = true;
 
     $scope.signin = function() {
       $http.defaults.headers.common['Authorization'] = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
+      console.log($scope.user.email + " " + $scope.user.password);
       $http({
         method: 'GET',
         url: '/api/users'
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
-        $location.path('/');//Specify needed from above
+        $location.path('/home');
         console.log('success');
       })
       .error(function(data){
@@ -23403,7 +23407,7 @@ module.exports = function(app) {
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
-        $location.path('/');//Specify needed from above
+        $location.path('/home');//Specify needed from above
         console.log('success');
       })
       .error(function(data){

@@ -9,14 +9,22 @@
   <title>Join</title>
 </head>
 <body>
-  <h1 class="main-heading">SPONTAENEOUS</h1>
-  <form method="post" class="dropdown">
-    <select name="Sort By" id="">
-      <option value="event-type" class="dropdown__item">Event Type</option>
-      <option value="location" class="dropdown__item">Location</option>
-      <option value="time" class="dropdown__item">Time</option>
-    </select>
-  </form>
+  <header>
+    <form method="get">
+      <input type="text" class="search-box" size="" maxlength="120">
+      <input type="submit" value="search" class="search-button">
+    </form>
+    <h1 class="main-heading">SPONTANEOUS</h1>
+  </header>
+  <article>
+    <form method="post" class="dropdown">
+      <select name="Sort By" id="">
+        <option value="event-type" class="dropdown__item">Event Type</option>
+        <option value="location" class="dropdown__item">Location</option>
+        <option value="time" class="dropdown__item">Time</option>
+      </select>
+    </form>
+  </article>
   <nav class="nav-bar">
     <ul class="nav-bar__list">
       <li class="nav-bar__list__item">Search</li>

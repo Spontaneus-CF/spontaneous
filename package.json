@@ -22,6 +22,12 @@
     "karma": "^0.12.23"
   },
   "dependencies": {
-    "express": "^4.9.4"
+    "bcrypt-nodejs": "latest",
+    "body-parser": "^1.8.3",
+    "express": "^4.9.4",
+    "jwt-simple": "latest",
+    "passport": "^0.2.1",
+    "passport-http": "^0.2.2",
+    "mongoose": "^3.8.14"
   }
 }

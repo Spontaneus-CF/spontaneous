@@ -9,14 +9,30 @@
   <title>Host</title>
 </head>
 <body>
-  <h1 class="main-heading">SPONTAENEOUS</h1>
-  <form role="form" class="main-form">
-    <input type="text" placeholder="Event Name" class="main-form__input" maxlength="15"></input>
-    <input type="text" placeholder="Location" class="main-form__input" maxlength="15"></input>
-    <input type="text" placeholder="Time" class="main-form__input"></input>
-    <input type="text" placeholder="No. of people" class="main-form__input"></input>
-    <input type="submit" name="create-button" value="Create Event"></input>
-  </form>
+  <header>
+    <form method="get">
+      <input type="text" class="search-box" size="" maxlength="120">
+      <input type="submit" value="search" class="search-button">
+    </form>
+    <h1 class="main-heading">SPONTANEOUS</h1>
+  </header>
+  <article>
+    <form role="form" class="main-form">
+      <input type="text" placeholder="Event Name" class="main-form__input" maxlength="15"></input>
+      <input type="text" placeholder="Location" class="main-form__input" maxlength="15"></input>
+      <input type="text" placeholder="Time" class="main-form__input"></input>
+      <input type="text" placeholder="No. of people" class="main-form__input"></input>
+      <input type="submit" name="create-button" value="Create Event"></input>
+    </form>
+  </article>
+  <nav class="nav-bar">
+    <ul class="nav-bar__list">
+      <li class="nav-bar__list__item">Search</li>
+      <li class="nav-bar__list__item"><a href="#">Host</a></li>
+      <li class="nav-bar__list__item"><a href="join.html">Join</a></li>
+      <li class="nav-bar__list__item"><a href="activities.html">Me</a></li>
+    </ul>
+  </nav>
   <button role="button" class="logout-button">Log Out</button>
 </body>
 </html>

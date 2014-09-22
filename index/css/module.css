@@ -1,0 +1,38 @@
+body {
+  background-image: url('../images/golf.jpg');
+  background-size: 120%;
+}
+
+h1, p, form, button {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 0;
+  margin-top: 15rem;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+input {
+  margin: 0 auto;
+}
+
+.email, .password {
+  display: block;
+}
+
+.email {
+  border-bottom: 0.1rem solid grey;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+}
+
+.password {
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'teko';
+  src: url('Teko 300.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'teko';
+  src: url('Teko regular.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url('Raleway regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('Raleway 600.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  border-style: none;
+  outline-style: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1, h2, li, p {
+  color: white;
+}
+
+h1 {
+  font-family: 'teko', sans-serif;
+}
+
+li, p {
+  font-family: 'raleway', sans-serif;
+}
+
+form {
+  border-radius: 0.3rem;
+}
+
+input {
+  width: 26rem;
+  height: 4.4rem;
+  font-size: 1.6rem;
+  padding: 0 0 0 1rem;
+}
+
+.btn-main {
+  width: 27.5rem;
+  height: 4.4rem;
+  font-size: 1.6rem;
+  padding: 0 0 0 1rem;
+  margin-top: 2rem;
+  background-color:#AF2F2F;
+  border-radius: 0.3rem;
+  color: white;
+}

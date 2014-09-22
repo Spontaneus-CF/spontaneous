@@ -7,12 +7,10 @@
 
   <button data-ng-click="newuser = !newuser">{{!newuser ? 'Create new User' : 'Sign in to existing account'}}</button>
 
-  <form name="newuserform" ng-data-show="newuser">
+  <form name="newuserform" ng-data-hide="!newuser">
     <input type="text" required data-ng-model="user.email" placeholder="username"/>
     <input type="password" required data-ng-model="user.password" placeholder="password"/>
     <input type="password" required data-ng-model="user.passwordConfirmation" placeholder="confirm your passowrd"/>
     <button data-ng-disabled="newuserform.$invalid" data-ng-click="createNewUser()">Create New User</button>
   </form>
 </div>
-
-

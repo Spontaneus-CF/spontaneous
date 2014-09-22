@@ -7,12 +7,17 @@ require('angular-cookies');
 
 var spontaneousApp = angular.module('spontaneousApp', ['ngRoute', 'ngCookies', 'base64']);
 
-require('./controllers/user-controller')(spontaneousApp);
+require('./controllers/users-controller')(spontaneousApp);
+require('./controllers/home-controller')(spontaneousApp);
 
-spontaneousApp.config([$routeProvider, function($routeProvider){
+spontaneousApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
+  .when('/', {
+    templateUrl: 'home.html',
+    controller: 'homeController'
+  })
   .when('/signin', {
-    templateUrl: 'views/user/users.html',
+    templateUrl: 'users.html',
     controller: 'usersController'
   })
 

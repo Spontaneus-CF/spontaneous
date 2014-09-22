@@ -3,10 +3,12 @@
 module.exports = function(app) {
   app.controller('usersController', function($scope, $http, $cookies, $base64, $location){
     if($location.path() === '/signout') $cookies.jwt = null;
-    if(!$cookies.jst || $cookies.jwt.length >=10) return $location.path('/'); //Need to specify homepage path.
+    if(!$cookies.jwt || $cookies.jwt.length >=10) return $location.path('/'); //Need to specify homepage path.
+
+    if($location.path() === '/signup') $scope.newuser = true;
 
     $scope.signin = function() {
-      $http.defualts.headers.common['Authorization'] = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
+      $http.defaults.headers.common['Authorization'] = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
       $http({
         method: 'GET',
         url: '/api/users'

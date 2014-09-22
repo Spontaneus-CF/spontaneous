@@ -24,7 +24,6 @@ module.exports = function(app, passport){
 
   app.get(baseUrl, passport.authenticate('local', {session: false}), 
     function(req, res){
-      return res.json('jwt': req.user.createToken(app)});
+      return res.json({'jwt': req.user.createToken(app)});
     });
-  });
 };

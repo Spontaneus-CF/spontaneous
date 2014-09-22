@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "angular": "^1.2.23",
     "debowerify": "^0.8.1",
     "gulp": "^3.8.8",
     "gulp-browserify": "^0.5.0",

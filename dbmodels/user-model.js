@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose');
 
-var userSchema = mongoose.schema({
+var userSchema = mongoose.Schema({
   local: {
     email: String,
     password: String
@@ -10,7 +10,7 @@ var userSchema = mongoose.schema({
   twitter: {
 
   },
-  
+
   facebook: {
 
   }

@@ -22,17 +22,48 @@ input {
   margin: 0 auto;
 }
 
-.email, .password {
+form input,
+.main-link {
   display: block;
 }
 
-.email {
-  border-bottom: 0.1rem solid grey;
-  border-top-right-radius: 0.3rem;
-  border-top-left-radius: 0.3rem;
+.border-line {
+  border-bottom: 0.1rem solid #E0E0E0;
 }
 
-.password {
-  border-bottom-right-radius: 0.3rem;
-  border-bottom-left-radius: 0.3rem;
+.main-form__email {
+  border-top-right-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+}
+
+.main-form__password {
+  border-bottom-right-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.main-form__submit {
+  width: 27rem;
+  height: 4.4rem;
+  margin-top: 1rem;
+  background-color:#AF2F2F;
+  border-radius: 0.2rem;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.main-link {
+  text-align: center;
+  width: 8rem;
+  height: 4.5rem;
+  padding: 0 1rem;
+  background-color: rgba(255,255,255,0.33);
+  color: white;
+  line-height: 4.5rem;
+  border-radius: 0.2rem;
+  font-family: 'raleway', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
 }

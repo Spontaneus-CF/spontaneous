@@ -45,7 +45,7 @@ h1 {
   font-family: 'teko', sans-serif;
 }
 
-li, p {
+li, p, input{
   font-family: 'raleway', sans-serif;
 }
 
@@ -58,15 +58,4 @@ input {
   height: 4.4rem;
   font-size: 1.6rem;
   padding: 0 0 0 1rem;
-}
-
-.btn-main {
-  width: 27.5rem;
-  height: 4.4rem;
-  font-size: 1.6rem;
-  padding: 0 0 0 1rem;
-  margin-top: 2rem;
-  background-color:#AF2F2F;
-  border-radius: 0.3rem;
-  color: white;
 }

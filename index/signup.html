@@ -3,20 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>Sign Up</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home Page</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/module.css">
+  <link rel="stylesheet" href="css/state.css">
 </head>
 <body>
-  <h1>SPONTAENEOUS</h1>
-  <form>
-    <input type="email" placeholder="email"></input>
-    <input type="username" placeholder="username"></input>
-    <input type="password" placeholder="password"></input>
+  <h1 class="intro-heading">SPONTANEOUS</h1>
+  <form role="form" class="main-form">
+    <input type="email" placeholder="Email" class="main-form__email border-line" maxlength="30" autofocus required></input>
+    <input type="text" placeholder="Username" class="main-form__username border-line"maxlength="15" required>
+    <input type="password" placeholder="Password" class="main-form__password" maxlength="15" required>
+    <input class="main-form__submit" type="submit" name="submit-button" value="Start">
   </form>
-  <button>Start</button>
-  <a href="home.html">Log in</a>
+  <form>
+  <a href="index.html" class="main-link">Log in</a>
   </form>
 </body>
 </html>

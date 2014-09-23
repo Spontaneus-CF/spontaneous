@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html class="no-js">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Join</title>
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Join</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+      <link rel="stylesheet" href="css/layout.css">
+      <link rel="stylesheet" href="css/module.css">
+      <link rel="stylesheet" href="css/state.css">
+      <link rel="stylesheet" href="ico-fonts/style.css">
+  </head>
+  <body>
+    <header>
+      <img class="logo"></img>
+    </header>
     <form method="get">
-      <input type="text" class="search-box" size="" maxlength="120">
-      <input type="submit" value="search" class="search-button">
+        <input type="text" class="search-box" size="" maxlength="120" placeholder="Search event">
     </form>
-    <h1 class="main-heading">SPONTANEOUS</h1>
-  </header>
-  <article>
-    <form method="post" class="dropdown">
-      <select name="Sort By" id="">
-        <option value="event-type" class="dropdown__item">Event Type</option>
-        <option value="location" class="dropdown__item">Location</option>
-        <option value="time" class="dropdown__item">Time</option>
-      </select>
-    </form>
-  </article>
-  <nav class="nav-bar">
-    <ul class="nav-bar__list">
-      <li class="nav-bar__list__item">Search</li>
-      <li class="nav-bar__list__item"><a href="host.html">Host</a></li>
-      <li class="nav-bar__list__item"><a href="#">Join</a></li>
-      <li class="nav-bar__list__item"><a href="activities.html">Me</a></li>
-    </ul>
-  </nav>
-</body>
+    <article>
+      <form method="post">
+        <select class="dropdown" name="Sort By">
+          <option value="event-type" class="dropdown__item">Event Type</option>
+          <option value="location" class="dropdown__item">Location</option>
+          <option value="time" class="dropdown__item">Time</option>
+        </select>
+      </form>
+    </article>
+      <nav class="mobile-bar">
+        <ul class="mobile-bar__list">
+          <li class="mobile-bar__item">Search</li>
+          <li class="mobile-bar__item"><a href="host.html">Host</a></li>
+          <li class="mobile-bar__item"><a href="#">Join</a></li>
+          <li class="mobile-bar__item"><a href="activities.html">Me</a></li>
+        </ul>
+      </nav>
+  </body>
 </html>

@@ -1,0 +1,144 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M256 320c0-141.385 114.615-256 256-256s256 114.615 256 256c0 141.385-114.615 256-256 256-141.385 0-256-114.615-256-256zM768 640h-512c-141.384 0-256 114.618-256 256v64h1024v-64c0-141.382-114.616-256-256-256z"
+				],
+				"tags": [
+					"user",
+					"profile",
+					"avatar",
+					"person",
+					"talk",
+					"member"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 116,
+				"order": 11,
+				"prevSize": 32,
+				"code": 58880,
+				"name": "user",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 116
+		},
+		{
+			"icon": {
+				"paths": [
+					"M992.262 871.396l-242.552-206.294c-25.074-22.566-51.89-32.926-73.552-31.926 57.256-67.068 91.842-154.078 91.842-249.176 0-212.078-171.922-384-384-384-212.076 0-384 171.922-384 384 0 212.078 171.922 384 384 384 95.098 0 182.108-34.586 249.176-91.844-1 21.662 9.36 48.478 31.926 73.552l206.294 242.552c35.322 39.246 93.022 42.554 128.22 7.356s31.892-92.898-7.354-128.22zM384 640c-141.384 0-256-114.616-256-256s114.616-256 256-256 256 114.616 256 256-114.614 256-256 256z"
+				],
+				"tags": [
+					"search",
+					"magnifier",
+					"lookup",
+					"find"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 127,
+				"order": 10,
+				"prevSize": 32,
+				"code": 58881,
+				"name": "search",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 127
+		},
+		{
+			"icon": {
+				"paths": [
+					"M864 128l-480 480-224-224-160 160 384 384 640-640z"
+				],
+				"tags": [
+					"checkmark",
+					"tick",
+					"correct",
+					"accept",
+					"ok"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 254,
+				"order": 9,
+				"prevSize": 32,
+				"code": 58882,
+				"name": "checkmark",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 254
+		},
+		{
+			"icon": {
+				"paths": [
+					"M402.746 146.746l-320 320c-24.994 24.992-24.994 65.516 0 90.508l320 320c24.994 24.992 65.516 24.992 90.51 0 24.996-24.992 24.996-65.516 0-90.508l-210.748-210.746h613.492c35.346 0 64-28.652 64-64 0-35.346-28.654-64-64-64h-613.492l210.746-210.746c12.496-12.496 18.746-28.876 18.746-45.254s-6.248-32.758-18.744-45.254c-24.996-24.994-65.516-24.994-90.51 0z"
+				],
+				"tags": [
+					"arrow-left",
+					"left",
+					"previous"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 302,
+				"order": 12,
+				"prevSize": 32,
+				"code": 58883,
+				"name": "arrow-left",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 302
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "ico-fonts"
+	},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "ico-fonts",
+				"majorVersion": 1,
+				"minorVersion": 0
+			},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 512,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 58880,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": true,
+			"showMetadata": false
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"png": false,
+			"sprites": true
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"search": ""
+	}
+}

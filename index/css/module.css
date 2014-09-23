@@ -72,4 +72,15 @@ form input,
   border-radius: 3rem;
   height: 3rem;
   opacity: 0.5;
+  display: inline;
 }
+
+.icon-search {
+  font-size: 1.5rem;
+  position: relative;
+  right: 3rem;
+}
+
+
+
+

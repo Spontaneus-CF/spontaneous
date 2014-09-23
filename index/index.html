@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htmls>
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +13,15 @@
     <link rel="stylesheet" href="ico-fonts/style.css">
   </head>
   <body>
-    <form method="get">
-      <input type="text" class="search-box" size="" maxlength="120" placeholder="Search events">
-    </form>
-    <h1>SPONTANEOUS</h1>
+    <div class="search-wrapper">
+      <form method="get">
+        <div class="search-box">
+          <input type="text" class="search-box" size="" maxlength="120" placeholder="Search events">
+          <span class="icon-search"></span>
+        </div>
+      </form>
+    </div>
+    <h1 class="intro-heading">SPONTANEOUS</h1>
     <p>Connect with others. Fast.</p>
     <form class="main-form">
       <input class="main-form__email border-line" type="email" placeholder="Email" maxlength="30" autofocus required >

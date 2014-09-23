@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'teko';
-  src: url('Teko 300.ttf');
+  src: url('../fonts/Teko 300.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'teko';
-  src: url('Teko regular.ttf');
+  src: url('../fonts/Teko regular.ttf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'raleway';
-  src: url('Raleway regular.ttf');
+  src: url('../fonts/Raleway regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('Raleway 600.ttf');
+  src: url('../fonts/Raleway 600.ttf');
   font-weight: bold;
   font-style: normal;
 }

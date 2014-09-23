@@ -20,7 +20,6 @@ spontaneousApp.config(['$routeProvider', function($routeProvider){
     templateUrl: 'users.html',
     controller: 'usersController'
   })
-
   .otherwise({
     redirectTo:'/signin'
   });

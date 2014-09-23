@@ -21,7 +21,6 @@ spontaneousApp.config(['$routeProvider', function($routeProvider){
     templateUrl: 'users.html',
     controller: 'usersController'
   })
-
   .otherwise({
     redirectTo:'/signin'
   });
@@ -23378,11 +23377,10 @@ module.exports = function(app) {
     if($location.path() === '/signin') $scope.newuser = true;
 
     $scope.signin = function() {
-      $http.defaults.headers.common['Authorization'] = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
-      console.log($scope.user.email + " " + $scope.user.password);
+      $http.defaults.headers.common.Authorization = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
       $http({
         method: 'GET',
-        url: '/api/users'
+        url: '/api/v_0_0_1/users'
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
@@ -23402,12 +23400,12 @@ module.exports = function(app) {
     $scope.createNewUser = function() {
       $http({
         method: 'POST',
-        url: '/api/users',
+        url: '/api/v_0_0_1/users',
         data: $scope.user
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
-        $location.path('/home');//Specify needed from above
+        $location.path('/home'); //Specify needed from above
         console.log('success');
       })
       .error(function(data){

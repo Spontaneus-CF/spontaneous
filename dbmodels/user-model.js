@@ -24,7 +24,7 @@ userSchema.methods.generateHash = function(password) {
 };
 
 userSchema.methods.validPassword = function(password) {
-  return bcrypt.compareSync(password, this.basic.password);
+  return bcrypt.compareSync(password, this.local.password);
 };
 
 userSchema.methods.createToken = function(app) {

@@ -8,8 +8,7 @@ module.exports = function(app) {
     if($location.path() === '/signin') $scope.newuser = true;
 
     $scope.signin = function() {
-      $http.defaults.headers.common['Authorization'] = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
-      console.log($scope.user.email + " " + $scope.user.password);
+      $http.defaults.headers.common.Authorization = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
       $http({
         method: 'GET',
         url: '/api/v_0_0_1/users'
@@ -37,7 +36,7 @@ module.exports = function(app) {
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
-        $location.path('/home');//Specify needed from above
+        $location.path('/home'); //Specify needed from above
         console.log('success');
       })
       .error(function(data){

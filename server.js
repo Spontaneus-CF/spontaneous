@@ -22,6 +22,7 @@ require('./lib/passport')(passport);
 
 app.use(bodyparser.json());
 require('./routes/user-routes')(app, passport);
+require('./routes/event-routes')(app, jwtauth);
 
 var server = http.createServer(app);
 

@@ -1,6 +1,6 @@
 "use strict";
 
-var Event = require('../models/event-model');
+var Event = require('../dbmodels/event-model');
 
 module.exports = function(app, jwtauth){
   var baseUrl = '/api/v_0_0_1/events';
@@ -16,7 +16,10 @@ module.exports = function(app, jwtauth){
     var newEvent = new Event;
     newEvent.location = req.body.location;
     newEvent.name = req.body.name;
-    newEvent.time = req.body.time;
+    newEvent.eventTime = req.body.eventTime;
+    newEvent.address = req.body.location;
+    newEvent.maxNumber = req.body.maxNumber;
+    newEvent.minNumber = req.body.minNumber;
 
     newEvent.save(function(err, resEvent){
       if (err) return res.status(500).json(err);

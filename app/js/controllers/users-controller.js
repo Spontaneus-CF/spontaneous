@@ -25,6 +25,7 @@ module.exports = function(app) {
     };
 
     $scope.validatePassword = function() {
+      if (!$scope.user.password) return true;
       return $scope.user.password === $scope.user.passwordConfirmation;
     };
 

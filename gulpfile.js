@@ -1,8 +1,6 @@
 var gulp = require('gulp');
 var rimraf = require('gulp-rimraf'); //clean
 var gcopy = require('gulp-copy');
-// var browserify = require('browserify');
-// var source = require('vinyl-source-stream');
 var jshint = require('gulp-jshint');
 var karma = require('gulp-karma');
 var jasmine = require('gulp-jasmine');
@@ -22,7 +20,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('copy', function() {
-  gulp.src(paths.view)
+  gulp.src([paths.view, paths.index])
     .pipe(gulp.dest('build/'));
 });
 
@@ -32,15 +30,9 @@ gulp.task('lint', function() {
     .pipe(jshint.reporter('default'));
 });
 
-// gulp.task('build', function() {
-//   gulp.src('app/js/app.js', {read: false})
-//     .pipe(browserify())
-//     .pipe(rename('bundle.js'))
-//     .pipe(gulp.dest('./build'));
-// });
-
 gulp.task('brow', ['clean'], function() {
-  var b = brow('./app/js/app.js');
+  var b = brow('./app/js/app.js')
+    .transform('debowerify');
 
   var stream = b.bundle('bundle.js');
 

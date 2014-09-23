@@ -113,6 +113,11 @@ input {
   right: 3rem;
 }
 
-
+.logo {
+  height: 5rem;
+  width: 5rem;
+  background-color: blue;
+  display: inline-block;
+}
 
 

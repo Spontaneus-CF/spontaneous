@@ -7,8 +7,12 @@ require('angular-cookies');
 
 var spontaneousApp = angular.module('spontaneousApp', ['ngRoute', 'ngCookies', 'base64']);
 
+//controllers
 require('./controllers/users-controller')(spontaneousApp);
 require('./controllers/home-controller')(spontaneousApp);
+
+//Directives
+require('./directives/validate-password.js')(spontaneousApp);
 
 spontaneousApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
@@ -24,4 +28,5 @@ spontaneousApp.config(['$routeProvider', function($routeProvider){
     redirectTo:'/signin'
   });
 }]);
+
 

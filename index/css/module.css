@@ -1,15 +1,10 @@
-body {
-  background-image: url('../images/golf.jpg');
-  background-size: 120%;
-}
-
 h1, p, form, button {
   text-align: center;
 }
 
 .intro-heading {
   margin-bottom: 0;
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 .intro-description {
@@ -19,10 +14,6 @@ h1, p, form, button {
 
 input {
   margin: 0 auto;
-  display: block;
-}
-
-.main-link {
   display: block;
 }
 
@@ -52,6 +43,7 @@ input {
 }
 
 .main-link {
+  display: block;
   text-align: center;
   width: 8rem;
   height: 4.5rem;
@@ -61,27 +53,37 @@ input {
   line-height: 4.5rem;
   border-radius: 0.2rem;
   font-family: 'raleway', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0 0 1rem 1rem;
   position: absolute;
   bottom: 0;
 }
 
-.search-box {
-  margin-left: 1rem;
-  border-radius: 3rem;
+.search-box,
+.search-box2 {
+  margin-left: 1.2rem;
+  border-radius: 0.2rem;
   height: 2.5rem;
   opacity: 0.7;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.search-box {
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  display: inline;
+  width: 26rem;
+}
+
+.search-box2 {
+  margin-top: 5.5rem;
+  width: 90%;
 }
 
 .mobile-bar {
   position: absolute;
   width: 100%;
   height: 5rem;
-  background-color: #AF2F2F;
+  background-color: #282828;
   bottom: 0;
 }
 
@@ -92,27 +94,85 @@ input {
 
 .mobile-bar__item {
   display: inline-block;
-  padding: 0 7%;
-  line-height: 4.5rem;
+  padding: 0 8.5%;
+  line-height: 5.5rem;
 }
 
 .mobile-bar__item a {
-  color: white;
+  color: #A8A8A8;
 }
 
 .dropdown {
   display: block;
   margin: auto;
-  width: 90%;
+  margin-bottom: 0.5rem;
+  width: 95%;
   height: 4rem;
+  font-size: 1.6rem;
+  opacity: 0.8;
 }
 
 .icon-search {
   font-size: 1.5rem;
   position: relative;
   right: 3rem;
+  opacity: 0.5;
 }
 
+.icon-spinner {
+  position: relative;
+  display: inline;
+  float: right;
+  margin-top: -4.8rem;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
 
+.sub-heading {
+  font-size: 3rem;
+  padding-top: 0.4rem;
+}
 
+.event-holder {
+  width: 100%;
+  background-color: white;
+  float: left;
+}
 
+.events {
+  padding: 0 1rem;
+}
+
+.events__list {
+  color: #333333;
+  font-size: 1.5rem;
+}
+
+th, td {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.events__list__name {
+  float: left;
+  font-weight: bold;
+}
+
+.events__list__time {
+  float: right;
+  line-height: 1.5rem;
+}
+
+.events__list__max,
+.events__list__min {
+  float: right;
+  text-align: right;
+}
+
+.join {
+  width: 5rem;
+  float: right;
+}

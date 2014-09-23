@@ -14,27 +14,45 @@
   </head>
   <body>
     <header>
+      <h1 class="sub-heading">EXPLORE</h1>
       <img class="logo"></img>
+      <div class="icon-spinner"></div>
     </header>
     <form method="get">
-      <input type="text" class="search-box" size="" maxlength="120" placeholder="Search events">
+      <input type="text" class="search-box2" size="" maxlength="120" placeholder="Search events">
       <span class="icon-search"></span>
     </form>
-    <article>
-      <form method="post">
-        <select class="dropdown" name="Sort By">
-          <option value="event-type" class="dropdown__item">Event Type</option>
-          <option value="location" class="dropdown__item">Location</option>
-          <option value="time" class="dropdown__item">Time</option>
-        </select>
-      </form>
+    <form method="post">
+      <select class="dropdown" name="Sort By">
+        <option value="event-type" class="dropdown__item">Event Type</option>
+        <option value="location" class="dropdown__item">Location</option>
+        <option value="time" class="dropdown__item">Time</option>
+      </select>
+    </form>
+    <article class="event-holder">
+      <table class="events">
+        <thead class="events">
+          <tr class="events__list">
+            <th class="events__list__name">name wer wergwegrerw wergwerg wergwerg </th>
+            <th></th>
+            <th class="events__list__time">time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="events__list__location">location</td>
+            <td class="events__list__min">min</td>
+            <td class="events__list__max">max</td>
+          </tr>
+        </tbody>
+      </table>
     </article>
     <nav class="mobile-bar">
       <ul class="mobile-bar__list">
-        <li class="mobile-bar__item">Search</li>
-        <li class="mobile-bar__item"><a href="host.html">Host</a></li>
-        <li class="mobile-bar__item"><a href="#">Join</a></li>
-        <li class="mobile-bar__item"><a href="activities.html">Me</a></li>
+        <li class="mobile-bar__item"><a href="host.html" class="icon-pencil"></a></li>
+        <li class="mobile-bar__item"><a href="join.html" class="icon-compass"></a></li>
+        <li class="mobile-bar__item"><a href="activities.html" class="icon-user"></a></li>
+        <li class="mobile-bar__item"><a href="index.html" class="icon-switch"></a></li>
       </ul>
     </nav>
   </body>

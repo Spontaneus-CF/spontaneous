@@ -68,6 +68,7 @@ input {
 }
 
 .search-box {
+  margin-left: 1rem;
   border-radius: 3rem;
   height: 2.5rem;
   opacity: 0.7;

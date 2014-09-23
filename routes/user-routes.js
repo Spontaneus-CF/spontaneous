@@ -15,6 +15,8 @@ module.exports = function(app, passport){
     var newUser = new User();
     newUser.local.email = req.body.email;
     newUser.local.password = newUser.generateHash(req.body.password);
+    newUser.local.firstName = req.body.firstName;
+    newUser.local.lastName = req.body.lastName;
 
     newUser.save(function(err, resUser){
       if (err) return res.status(500).json(err);
@@ -22,7 +24,7 @@ module.exports = function(app, passport){
     });
   });
 
-  app.get(baseUrl, passport.authenticate('local', {session: false}), 
+  app.get(baseUrl, passport.authenticate('local', {session: false}),
     function(req, res){
       return res.json({'jwt': req.user.createToken(app)});
     });

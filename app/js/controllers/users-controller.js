@@ -3,12 +3,12 @@
 module.exports = function(app) {
   app.controller('usersController', function($scope, $http, $cookies, $base64, $location){
     if($location.path() === '/signout') $cookies.jwt = null;
-    if(!$cookies.jwt || $cookies.jwt.length >=10) return $location.path('/home'); 
+    if(!$cookies.jwt || $cookies.jwt.length >=10) return $location.path('/home');
 
     if($location.path() === '/signin') $scope.newuser = true;
 
     $scope.signin = function() {
-      $http.defaults.headers.common['Authorization'] = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
+      $http.defaults.headers.common.Authorization = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
       console.log($scope.user.email + " " + $scope.user.password);
       $http({
         method: 'GET',
@@ -26,7 +26,11 @@ module.exports = function(app) {
     };
 
     $scope.validatePassword = function() {
+      if(!$scope.user.password && !$scope.user.passwordConfirmation){
+        return true;
+      }
       return $scope.user.password === $scope.user.passwordConfirmation;
+
     };
 
     $scope.createNewUser = function() {
@@ -37,7 +41,7 @@ module.exports = function(app) {
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
-        $location.path('/home');//Specify needed from above
+        $location.path('/home');
         console.log('success');
       })
       .error(function(data){

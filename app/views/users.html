@@ -1,16 +1,32 @@
 <div data-ng-controller="usersController">
-  <form name="userForm" data-ng-hide="newuser">
-    <input type="text" required data-ng-model="user.email" placeholder="username"/>
+  <form name="userForm" data-ng-hide="newuser" ng-submit="userForm.$valid">
+    <input type="email" required data-ng-model="user.email" placeholder="username"/>
     <input type="password" required data-ng-model="user.password" placeholder="password"/>
     <button data-ng-disabled="userform.$invalid" data-ng-click="signin()">Sign In</button>
   </form>
 
-  <button data-ng-click="newuser = !newuser">{{!newuser ? 'Create new User' : 'Sign in to existing account'}}</button>
 
-  <form name="newuserform" ng-data-show="newuser">
-    <input type="text" required data-ng-model="user.email" placeholder="username"/>
+
+  <form novalidate name="newuserform" data-ng-show="newuser">
+    <input type="email  " required data-ng-model="user.email" placeholder="Email"/>
     <input type="password" required data-ng-model="user.password" placeholder="password"/>
-    <input type="password" required data-ng-model="user.passwordConfirmation" placeholder="confirm your passowrd"/>
+    <input type="password" required data-ng-model="user.passwordConfirmation" placeholder="confirm your password"/>
+    <input type="text" required data-ng-model="user.firstName" placeholder="First Name"/>
+    <input type="text" required data-ng-model="user.lastName" placeholder="Last Name"/>
+    <div data-validate-password data-ng-hide="validatePassword()">
+
+    </div>
     <button data-ng-disabled="newuserform.$invalid" data-ng-click="createNewUser()">Create New User</button>
   </form>
+
+  <button data-ng-click="newuser = !newuser">{{!newuser ? 'Create new User' : 'Sign in to existing account'}}</button>
 </div>
+<style type="text/css">
+    input.ng-invalid.ng-dirty {
+      background-color: #FA787E;
+    }
+
+    input.ng-valid.ng-dirty {
+      background-color: #78FA89;
+    }
+  </style>

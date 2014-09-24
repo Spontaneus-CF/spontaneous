@@ -57,7 +57,7 @@ h1 {
   font-weight: bold;
 }
 
-li, p, input, th, td{
+li, p, input, section{
   font-family: 'raleway', sans-serif;
 }
 
@@ -84,3 +84,4 @@ header {
   position: fixed;
   z-index: 1;
 }
+

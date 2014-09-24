@@ -182,7 +182,8 @@ input {
 }
 
 .event-holder {
-  width: 75%;
+  position: absolute;
+  width: 100%;
   background-color: white;
   float: left;
   padding: 1rem 0;
@@ -190,16 +191,11 @@ input {
 }
 
 .event-holder section {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: normal;
   display: inline-block;
   padding: 0.3rem 1rem;
   color: #404040;
-}
-
-.join-holder {
-  width: 25%;
-  float: right;
 }
 
 .event-one {
@@ -211,12 +207,12 @@ input {
 }
 
 .event-three{
-  width: 5rem;
-  text-align: right;
+  width: 50%;
+  text-align: left;
 }
 
 .event-four {
-  width: 90%;
+  width: 80%;
 }
 
 .event-five {
@@ -231,4 +227,28 @@ font-size: 2rem;
 .event-five__people {
   color: #9B0B12;
   font-size: 5rem;
+}
+
+.join,
+.join-text {
+  position: absolute;
+}
+
+.join {
+  width: 10rem;
+  height: 10rem;
+  border: .5rem solid grey;
+  border-radius: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: #E0E0E0;
+  cursor: pointer;
+}
+
+.join-text {
+  color: #AF2F2F;
+  right: 3.3rem;
+  bottom: 2.8rem;
+  font-size: 4rem;
+  cursor: pointer;
 }

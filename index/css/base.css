@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'molle italic';
+  src: url('../fonts/Molle italic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   list-style: none;
   text-decoration: none;

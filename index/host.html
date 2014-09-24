@@ -14,20 +14,22 @@
   </head>
   <body>
     <header>
+      <h1 class="sub-hdr hdr-host">HOST</h1>
       <a href="join.html"><img class="logo" src="images/logo.png"></a>
-      <h1 class="main-heading">SPONTANEOUS</h1>
-      <form method="get" class="search-field desktop">
-        <input type="text" class="search-box" size="" maxlength="120" placeholder="Search events">
+      <div class="icon-checkmark"></div>
+    </header>
+      <form method="get">
+        <input type="text" class="search-box2" size="" maxlength="120" placeholder="Search events">
         <span class="icon-search"></span>
       </form>
     </header>
     <article>
-      <form role="form" class="main-form">
-        <input type="text" placeholder="Event Name" class="main-form__input" maxlength="15"></input>
-        <input type="text" placeholder="Location" class="main-form__input" maxlength="15"></input>
-        <input type="text" placeholder="Time" class="main-form__input"></input>
-        <input type="text" placeholder="No. of people" class="main-form__input"></input>
-        <input type="submit" name="create-button" value="Create Event"></input>
+      <form role="form" class="host-form">
+        <input type="text" placeholder="Event Name" class="host-form__one .border-line" maxlength="15"></input>
+        <input type="text" placeholder="Location" class="host-form__two .border-line" maxlength="15"></input>
+        <input type="text" placeholder="Time" class="host-form__three .border-line"></input>
+        <input type="text" placeholder="No. of people" class="host-form__four .border-line"></input>
+        <input type="submit" name="create-button" value="Create Event" class="host-form__submit .border-line"></input>
       </form>
     </article>
     <nav class="mobile-bar">
@@ -38,6 +40,5 @@
         <li class="mobile-bar__item"><a href="index.html" class="icon-switch"></a></li>
       </ul>
     </nav>
-    <button role="button" class="logout-button">Sign Out</button>
   </body>
 </html>

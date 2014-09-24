@@ -6,7 +6,7 @@
     top: .15rem;
   }
 
-  .host-hdr {
+  .hdr-host {
     left: calc(50% - 3rem);
   }
 
@@ -14,20 +14,19 @@
     position: absolute;
     right: 10rem;
     top: 0rem;
-
   }
 
   .search-box {
     width: 17vw;
   }
 
-  .main-form {
+  .host-form {
     position: absolute;
     top: 12rem;
     left: calc(50% - 20rem);
   }
 
-  .main-form__input {
+  .host-form input {
     margin: 2.5rem 0;
     width: 40rem;
   }

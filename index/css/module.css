@@ -41,17 +41,20 @@ input {
   border-bottom: 0.1rem solid #E0E0E0;
 }
 
-.main-form__start {
+.main-form__start,
+.host-form__one {
   border-top-right-radius: 0.2rem;
   border-top-left-radius: 0.2rem;
 }
 
-.main-form__end {
+.main-form__end
+.host-form__four {
   border-bottom-right-radius: 0.2rem;
   border-bottom-left-radius: 0.2rem;
 }
 
-.main-form__submit {
+.main-form__submit,
+.host-form__submit {
   width: 27rem;
   height: 4.4rem;
   margin-top: 1rem;
@@ -60,6 +63,10 @@ input {
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
+}
+
+.host-form {
+  margin: 3rem;
 }
 
 .main-link {
@@ -139,7 +146,8 @@ input {
   opacity: 0.5;
 }
 
-.icon-spinner {
+.icon-spinner,
+.icon-checkmark {
   position: relative;
   display: inline;
   float: right;
@@ -159,6 +167,10 @@ input {
 
 .hdr-explore {
   margin-left: 8%;
+}
+
+.hdr-host {
+  margin-left: 12%;
 }
 
 .event-holder {

@@ -11,8 +11,9 @@ var eventSchema = mongoose.Schema({
     address: String,
     eventTime: String,
     maxNumber: String,
-    minNumber: String
+    minNumber: String,
+    attendees: Array
   }
 });
 
-module.exports = mongoose.model('Event', eventSchema); 
+module.exports = mongoose.model('Event', eventSchema);

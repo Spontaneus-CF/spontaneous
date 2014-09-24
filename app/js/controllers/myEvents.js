@@ -19,5 +19,22 @@ module.exports = function(app){
       });
     };
     $scope.getMyEvents();
+
+    $scope.joinEvent = function(event) {
+      $http({
+        method: 'PUT',
+        url:'/api/v_0_0_1/events/' + event._id,
+        data: $scope.event,
+      })
+      .success(function(data){
+        data.attendees.push('test');
+        console.log('success');
+      })
+      .error(function(data, status){
+        console.log('error');
+        console.log(data);
+        console.log(status);
+      });
+    };
   });
 };

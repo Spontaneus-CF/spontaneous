@@ -2,6 +2,11 @@ h1, p, form, button {
   text-align: center;
 }
 
+input {
+  margin: 0 auto;
+  display: block;
+}
+
 .signup-body {
   background-image: url("../images/golf.jpg");
   background-size: 120%;
@@ -30,11 +35,6 @@ h1, p, form, button {
 .intro-description {
   font-size: 1.8rem;
   margin: 0 0 2rem 0;
-}
-
-input {
-  margin: 0 auto;
-  display: block;
 }
 
 .border-line {
@@ -79,7 +79,7 @@ input {
   color: white;
   line-height: 4.5rem;
   border-radius: 0.2rem;
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   font-size: 1.6rem;
   margin: 0 0 1rem 1rem;
   position: absolute;
@@ -102,7 +102,8 @@ input {
 }
 
 .search-box2 {
-  margin-top: 5.5rem;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
   width: 90%;
 }
 
@@ -132,7 +133,7 @@ input {
 .dropdown {
   display: block;
   margin: auto;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   width: 95%;
   height: 4rem;
   font-size: 1.6rem;
@@ -146,16 +147,20 @@ input {
   opacity: 0.5;
 }
 
-.icon-spinner,
-.icon-checkmark {
+.main-user {
   position: relative;
   display: inline;
   float: right;
   margin-top: -4rem;
   margin-right: 1rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: white;
   cursor: pointer;
+}
+
+.main-user span{
+  font-family: "raleway", sans-serif;
+  font-weight: bold;
 }
 
 .sub-hdr {
@@ -174,36 +179,53 @@ input {
 }
 
 .event-holder {
-  width: 100%;
+  width: 75%;
   background-color: white;
   float: left;
+  padding: 1rem 0;
+  border-top: 0.5rem solid grey;
 }
 
 .event-holder section {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: normal;
   display: inline-block;
-  padding: 0 1rem;
+  padding: 0.3rem 1rem;
+  color: #404040;
+}
+
+.join-holder {
+  width: 25%;
+  float: right;
 }
 
 .event-one {
-  width: 60%;
+  width: 90%;
 }
 
 .event-two{
-  width: 10%;
+  width: 6rem;
 }
 
 .event-three{
-  width: 10%;
+  width: 5rem;
   text-align: right;
+}
+
+.event-four {
+  width: 90%;
+}
+
+.event-five {
+  width: 30%;
 }
 
 .event-one__name {
 font-weight: bold;
+font-size: 2rem;
 }
 
-.join {
-  width: 5rem;
-  float: right;
+.event-five__people {
+  color: #9B0B12;
+  font-size: 5rem;
 }

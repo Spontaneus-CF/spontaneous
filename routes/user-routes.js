@@ -8,20 +8,22 @@ module.exports = function(app, passport){
   app.post(baseUrl, function(req, res){
     User.findOne({'local.email' : req.body.email}, function(err, user){
       if(err) return res.status(500).json(err);
+      if(user){
+        return res.status(401).json({'msg': 'cannot create user'});
+      } else {
 
-      if(user) return res.status(401).json({'msg': 'cannot create user'});
-    });
+        var newUser = new User();
+        newUser.local.email = req.body.email;
+        newUser.local.password = newUser.generateHash(req.body.password);
+        newUser.local.firstName = req.body.firstName;
+        newUser.local.lastName = req.body.lastName;
 
-    var newUser = new User();
-    newUser.local.email = req.body.email;
-    newUser.local.password = newUser.generateHash(req.body.password);
-    newUser.local.firstName = req.body.firstName;
-    newUser.local.lastName = req.body.lastName;
-
-    newUser.save(function(err, resUser){
-      if (err) return res.status(500).json(err);
-      return res.status(200).json({'firstName': resUser.local.firstName,
-                                  'jwt': resUser.createToken(app)});
+        newUser.save(function(err, resUser){
+          if (err) return res.status(500).json(err);
+          return res.status(200).json({'firstName': resUser.local.firstName,
+                                    'jwt': resUser.createToken(app)});
+        });
+      }
     });
   });
 

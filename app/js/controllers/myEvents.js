@@ -21,25 +21,28 @@ module.exports = function(app){
     $scope.getMyEvents();
 
     $scope.joinEvent = function(event) {
-      event.attendees.push($cookies.firstName);
-      $http({
-        method: 'PUT',
-        url:'/api/v_0_0_1/events/' + event._id,
-        data: event
-      })
-      .success(function(data){
-        $location.path('/home'); // change path
-        console.log(data);
-        console.log('success');
-      })
-      .error(function(data, status){
-        console.log('error');
-        console.log(data);
-        console.log(status);
-      });
+      var i = event.attendees.indexOf($cookies.firstName);  
+      if (i === -1){  
+        event.attendees.push($cookies.firstName);
+        $http({
+          method: 'PUT',
+          url:'/api/v_0_0_1/events/' + event._id,
+          data: event
+        })
+        .success(function(data){
+          $location.path('/home'); // change path
+          console.log(data);
+          console.log('success');
+        })
+        .error(function(data, status){
+          console.log('error');
+          console.log(data);
+          console.log(status);
+        });
+      }
     };
 
-    $scope.unJoinEvent = function(event) {
+    $scope.unJoinEvent = function(event) { //refactor
       var i = event.attendees.indexOf($cookies.firstName);
       if (i !== -1){              // Checks to see if user is in attendees array before executing - maybe change this
         event.attendees.splice(i, 1);

@@ -166,16 +166,19 @@ input {
 .sub-hdr {
   position: absolute;
   font-size: 3rem;
-  left: calc(50% - 7rem);
   top: .5rem;
-}
+  }
 
 .hdr-explore {
-  margin-left: 8%;
+  left: calc(50% - 4rem);
 }
 
 .hdr-host {
-  margin-left: 12%;
+  left: calc(50% - 1.8rem);
+}
+
+.hdr-activities {
+  left: calc(50% - 7.5rem);
 }
 
 .event-holder {

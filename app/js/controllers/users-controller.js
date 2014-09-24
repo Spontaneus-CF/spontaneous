@@ -15,6 +15,7 @@ module.exports = function(app) {
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
+        $cookies.firstName = data.firstName;
         $location.path('/home');
         console.log('success');
       })
@@ -25,6 +26,7 @@ module.exports = function(app) {
     };
 
     $scope.validatePassword = function() {
+      if (!$scope.user.password) return true;
       return $scope.user.password === $scope.user.passwordConfirmation;
     };
 
@@ -36,6 +38,7 @@ module.exports = function(app) {
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
+        $cookies.firstName = data.firstName;
         $location.path('/home'); //Specify needed from above
         console.log('success');
       })

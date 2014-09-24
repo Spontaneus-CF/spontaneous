@@ -8,7 +8,10 @@ var moment = require('moment');
 var userSchema = mongoose.Schema({
   local: {
     email: String,
-    password: String
+    password: String,
+    firstName: String,
+    lastName: String,
+    friends: Array
   },
   twitter: {
 
@@ -28,7 +31,7 @@ userSchema.methods.validPassword = function(password) {
 };
 
 userSchema.methods.createToken = function(app) {
-  var expires = moment().add(7, 'days').valueOf(); 
+  var expires = moment().add(7, 'days').valueOf();
   var self = this;
   var token = jwt.encode({
     iss: self._id,

@@ -1,7 +1,9 @@
 <div data-ng-controller="homeController">
     <p>
       <h3>Users</h3>
-      {{user.local.email}}, {{user.local.password}}
+      Hello, {{firstName}}!
     </p>
     <button data-ng-click='logout()'>Log Out</button>
+    <button data-ng-click='newEvent()'>New Event</button>
+    <button data-ng-click='getEvents()'>Show me the Events!</button>
 </div>

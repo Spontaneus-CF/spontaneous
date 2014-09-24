@@ -19,10 +19,11 @@ app.set('secret', process.env.SECRET || 'developmentsecret');
 app.use(passport.initialize());
 
 require('./lib/passport')(passport);
+var jwtauth = require('./lib/jwtauth')(app);
 
 app.use(bodyparser.json());
 require('./routes/user-routes')(app, passport);
-require('./routes/event-routes')(app, jwtauth);
+require('./routes/event-routes')(app, jwtauth.auth);
 
 var server = http.createServer(app);
 

@@ -1,11 +1,13 @@
-<div data-ng-controller="eventsController"
+<div data-ng-controller="eventsController">
   <form name='eventForm'>
-    <input type="text" required data-ng-model='event.name' placeholder="Event Name">
-    <input type="text" required data-ng-model='event.location' placeholder='Event Address'>
+    <input type="text" required data-ng-model='event.eName' placeholder="Event Name">
+    <input type="text" required data-ng-model='event.eLocation' placeholder='Event Address'>
     <input type="text" required data-ng-model='event.eventTime' placeholder='Time event begins'>
     <input type="text" required data-ng-model='event.maxNumber' placeholder='Max # of Attendees'>
     <input type="text" required data-ng-model='event.minNumber' placeholder='Min # of Attendees'>
   </form>
+
+  <button data-ng-click='submitForm()'>Submit Event</button>
 
 
 </div>

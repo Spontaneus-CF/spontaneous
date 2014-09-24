@@ -11,6 +11,7 @@ var spontaneousApp = angular.module('spontaneousApp', ['ngRoute', 'ngCookies', '
 require('./controllers/users-controller')(spontaneousApp);
 require('./controllers/home-controller')(spontaneousApp);
 require('./controllers/events-controller')(spontaneousApp);
+require('./controllers/myEvents')(spontaneousApp);
 
 //Directives
 require('./directives/validate-password.js')(spontaneousApp);
@@ -31,6 +32,10 @@ spontaneousApp.config(['$routeProvider', function($routeProvider){
   .when('/new-event', {
     templateUrl: 'event-form.html',
     controller: 'eventsController'
+  })
+  .when('/events', {
+    templateUrl: 'events.html',
+    controller: 'myEvents'
   })
   .when('/unauthorized', {
     templateUrl: 'unauth.html'

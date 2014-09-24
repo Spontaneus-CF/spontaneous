@@ -12,6 +12,10 @@ module.exports = function(app){
 
     $scope.checkAuth();
 
+    $scope.getEvents = function(){
+      $location.path('/events');
+    };
+
     $scope.newEvent = function(){
       $location.path('/new-event');
     };

@@ -1,22 +1,22 @@
 "use strict";
 
 module.exports = function(app){
-  app.controller('eventsController', function($scope, $http, $location, auth){
-    $scope.submitForm = function(){
-      console.log($scope.event);
+  app.controller('myEvents', function($scope, $http, auth, $location){
+    $scope.getMyEvents = function(){
       $http({
-        method: 'POST',
+        method: 'GET',
         url: '/api/v_0_0_1/events',
-        data: $scope.event
       })
       .success(function(data){
-        $location.path('/home');
+        $scope.events = data;
         console.log('success');
       })
-      .error(function(data){
+      .error(function(data, status){
         console.log('error');
         console.log(data);
+        console.log(status);
       });
     };
+    $scope.getMyEvents();
   });
 };

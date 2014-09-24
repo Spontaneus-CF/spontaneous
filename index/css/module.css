@@ -21,12 +21,12 @@ input {
   border-bottom: 0.1rem solid #E0E0E0;
 }
 
-.main-form__email {
+.main-form__start {
   border-top-right-radius: 0.2rem;
   border-top-left-radius: 0.2rem;
 }
 
-.main-form__password {
+.main-form__end {
   border-bottom-right-radius: 0.2rem;
   border-bottom-left-radius: 0.2rem;
 }
@@ -123,16 +123,18 @@ input {
   position: relative;
   display: inline;
   float: right;
-  margin-top: -4.8rem;
+  margin-top: -4rem;
   margin-right: 1rem;
   font-size: 2.5rem;
   color: white;
   cursor: pointer;
 }
 
-.sub-heading {
+.sub-hdr {
+  position: absolute;
   font-size: 3rem;
-  padding-top: 0.4rem;
+  left: calc(50% - 7rem);
+  top: .5rem;
 }
 
 .event-holder {
@@ -143,6 +145,14 @@ input {
 
 .events {
   padding: 0 1rem;
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+  margin: .5rem .5rem;
+  background-color: blue;
+  display: inline-block;
 }
 
 .events__list {

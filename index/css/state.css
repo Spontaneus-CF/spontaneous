@@ -6,10 +6,6 @@
     top: .15rem;
   }
 
-  .hdr-host {
-
-  }
-
   .search-main {
     position: absolute;
     right: 15rem;
@@ -23,12 +19,12 @@
 
   .host-form {
     position: absolute;
-    top: 12rem;
+    top: 10rem;
     left: calc(50% - 20rem);
   }
 
   .host-form input {
-    margin: 2.5rem 0;
+    margin: 0 0 2.5rem 0;
     width: 40rem;
   }
 
@@ -67,13 +63,18 @@
     top: 7rem;
   }
 
-  .event-list {
+  .event-list-join {
     margin-top: 7rem;
   }
 
   .event-holder {
     width: 45%;
     margin: 2.5%;
+  }
+
+  .event-list-activities{
+    position: relative;
+    top: 5rem;
   }
 }
 

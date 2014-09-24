@@ -12,12 +12,16 @@ input {
   background-size: 120%;
 }
 
+.index-body {
+  background-image: url("../images/clubbing.jpg");
+  background-size: 350%;
+}
+
 .logo-main {
   display: block;
   margin: auto;
   width: 10rem;
-  height: 10rem;
-  border-radius: 8rem;
+  height: 14rem;
   margin-top: 7rem;
 }
 
@@ -199,7 +203,7 @@ input {
 }
 
 .event-one {
-  width: 90%;
+  width: 95%;
 }
 
 .event-two{
@@ -207,7 +211,7 @@ input {
 }
 
 .event-three{
-  width: 50%;
+  width: 60%;
   text-align: left;
 }
 

@@ -1,8 +1,19 @@
 @media (min-width: 50rem) {
+
+  .signup-body {
+    background-image: url("../images/golf.jpg");
+    background-size: 100%;
+  }
+
+  .index-body {
+    background-image: url("../images/clubbing.jpg");
+    background-size: 150%;
+  }
+
   .search-field {
     text-align: right;
   }
   .search-form {
     text-align: right;
   }
-  }
+}

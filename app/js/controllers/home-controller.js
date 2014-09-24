@@ -12,6 +12,8 @@ module.exports = function(app){
 
     $scope.checkAuth();
 
+    $scope.firstName = $cookies.firstName;
+
     $scope.getEvents = function(){
       $location.path('/events');
     };

@@ -20,12 +20,14 @@ module.exports = function(app, passport){
 
     newUser.save(function(err, resUser){
       if (err) return res.status(500).json(err);
-      return res.status(200).json({'jwt': resUser.createToken(app)});
+      return res.status(200).json({'firstName': resUser.local.firstName,
+                                  'jwt': resUser.createToken(app)});
     });
   });
 
   app.get(baseUrl, passport.authenticate('local', {session: false}), 
     function(req, res){
-      return res.json({'jwt': req.user.createToken(app)});
+      return res.json({'jwt': req.user.createToken(app),
+                        'firstName': req.user.local.firstName});
     });
 };

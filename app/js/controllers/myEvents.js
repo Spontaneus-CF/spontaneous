@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = function(app){
-  app.controller('myEvents', function($scope, $http, auth, $location){
+  app.controller('myEvents', function($scope, $http, auth, $location, $cookies){
     $scope.getMyEvents = function(){
       if (auth.sendJWT() === 'noauth') return false;
       $http({
@@ -21,13 +21,14 @@ module.exports = function(app){
     $scope.getMyEvents();
 
     $scope.joinEvent = function(event) {
+      event.attendees.push($cookies.firstName);
       $http({
         method: 'PUT',
         url:'/api/v_0_0_1/events/' + event._id,
-        data: $scope.event,
+        data: event
       })
       .success(function(data){
-        data.attendees.push('test');
+        console.log(data);
         console.log('success');
       })
       .error(function(data, status){

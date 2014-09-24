@@ -182,7 +182,7 @@ input {
 }
 
 .event-holder {
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: white;
   float: left;

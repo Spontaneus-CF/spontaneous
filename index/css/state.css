@@ -61,8 +61,27 @@
   color: white;
   font-size: 2.3rem
   }
+
+  .sortby {
+    position: relative;
+    top: 7rem;
+  }
+
+  .event-list {
+    margin-top: 7rem;
+  }
+
+  .event-holder {
+    width: 45%;
+    margin: 2.5%;
+  }
 }
 
+@media (min-width: 70rem) {
+  .event-holder {
+    width: 28.3%;
+  }
+}
 
 
 

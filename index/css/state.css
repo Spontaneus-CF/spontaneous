@@ -34,6 +34,14 @@
   input {
     width: 40rem;
   }
+
+  .intro-heading {
+    margin: 0;
+  }
+
+  .logo-main {
+    margin: 7rem auto 0 auto;
+  }
 }
 
 

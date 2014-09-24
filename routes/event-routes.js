@@ -8,7 +8,7 @@ module.exports = function(app, jwtauth){
   app.get(baseUrl, jwtauth, function(req, res){
     Event.find({}, function(err, events){
       if (err) res.status(500).json(err);
-      return res.json;
+      return res.send(events);
     });
   });
 

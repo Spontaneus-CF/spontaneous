@@ -3,6 +3,7 @@
 module.exports = function(app){
   app.controller('myEvents', function($scope, $http, auth, $location){
     $scope.getMyEvents = function(){
+      if (auth.sendJWT() === 'noauth') return false;
       $http({
         method: 'GET',
         url: '/api/v_0_0_1/events',

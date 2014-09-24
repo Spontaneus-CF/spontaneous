@@ -3,7 +3,7 @@
 module.exports = function(app){
   app.controller('eventsController', function($scope, $http, $location, auth){
     $scope.submitForm = function(){
-      console.log($scope.event);
+      if (auth.sendJWT() === 'noauth') return false;
       $http({
         method: 'POST',
         url: '/api/v_0_0_1/events',

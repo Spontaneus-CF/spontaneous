@@ -24,5 +24,6 @@ module.exports = function(app){
     $scope.getEvents = footer.getEvents;
     $scope.newEvent = footer.newEvent;
     $scope.logout = footer.logout;
+    $scope.getActivities = footer.getActivities;
   });
 };

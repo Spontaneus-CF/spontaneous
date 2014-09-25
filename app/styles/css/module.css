@@ -210,6 +210,7 @@ input {
   display: inline-block;
   padding: 0.3rem 1rem;
   color: #404040;
+  border-radius: 5rem;
 }
 
 .event-one {
@@ -244,11 +245,14 @@ font-size: 2rem;
 }
 
 .join,
-.join-text {
+.join-text,
+.leave,
+.leave-text {
   position: absolute;
 }
 
-.join {
+.join,
+.leave {
   width: 10rem;
   height: 10rem;
   border: .5rem solid grey;
@@ -259,7 +263,8 @@ font-size: 2rem;
   cursor: pointer;
 }
 
-.join:hover {
+.join:hover,
+.leave:hover {
   background-color: #E0E0E0;
   -o-transition:.3s;
   -ms-transition:.3s;
@@ -268,10 +273,19 @@ font-size: 2rem;
   transition:.3s;
 }
 
-.join-text {
+.join-text,
+.leave-text {
   color: #AF2F2F;
-  right: 3.3rem;
-  bottom: 2.8rem;
   font-size: 4rem;
   cursor: pointer;
+}
+
+.join-text {
+  right: 3.3rem;
+  bottom: 2.8rem;
+}
+
+.leave-text {
+  right: 2.8rem;
+  bottom: 2.8rem;
 }

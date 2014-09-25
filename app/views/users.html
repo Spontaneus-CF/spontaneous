@@ -1,9 +1,13 @@
+<head>
+  <style>
+  body {
+    background-image: url("../images/golf.jpg");
+    background-size: 150%;
+  }
+  </style>
+</head>
 <div data-ng-controller="usersController">
-  <div class="signup-body">
-    <!-- <form method="get" class="search-form">
-      <input type="text" class="search-box" size="" maxlength="120" placeholder="Search events">
-      <span class="icon-search"></span>
-    </form> -->
+  <div>
     <a href="join.html"><img class="logo-main" src="images/logo2.png"></a>
     <h1 class="intro-heading">SPONTANEOUS</h1>
     <p class="intro-description">Connect with others. Fast.</p>
@@ -19,11 +23,7 @@
     </form>
     <!-- class="main-link" -->
   </div>
-  <div class="index-body">
-    <!-- <form class="search-field">
-      <input type="text" class="search-box" size="" maxlength="120" placeholder="Search events">
-      <span class="icon-search"></span>
-    </form> -->
+  <div>
     <form name="userForm" data-ng-hide="newUser" ng-submit="userForm.$valid" class="main-form">
       <input data-ng-model="user.email" class="main-form__start border-line" type="email" placeholder="Email" maxlength="30" autofocus required >
       <input data-ng-model="user.password" class="main-form__end" type="password" placeholder="Password" maxlength="15" required>

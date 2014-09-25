@@ -8,10 +8,11 @@ var rename = require('gulp-rename');
 var brow = require('gulp-browserify-thin');
 
 var paths = {
-  app: 'app/js/**/*.js',
-  view: 'app/views/*.html',
-  styles: 'app/styles/*.css',
-  index: 'app/index.html'
+  app: './app/js/**/*.js',
+  view: './app/views/*.html',
+  styles: './app/styles/**/*.*',
+  index: './app/index.html',
+  images: './app/images/*.*'
 };
 
 gulp.task('clean', function() {
@@ -20,7 +21,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('copy', function() {
-  gulp.src([paths.view, paths.index])
+  gulp.src([paths.view, paths.styles, paths.index, paths.images], {base: './app'})
     .pipe(gulp.dest('build/'));
 });
 

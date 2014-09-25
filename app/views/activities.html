@@ -1,7 +1,6 @@
-
-<div data-ng-controller="eventsController">
+<div data-ng-controller='activitiesController'>
   <header>
-    <h1 class="sub-hdr hdr-explore">EVENTS</h1>
+    <h1 class="sub-hdr hdr-explore">MY EVENTS</h1>
     <a href="#"><img class="logo" src="images/logo.png"></a>
     <div class="icon-user main-user"><span> {{userName}}</span></div>
   </header>
@@ -17,7 +16,7 @@
   </select>
   </form>
   <main data-ng-repeat="event in events" class="event-list-join">
-    <article data-ng-hide="isJoined(event)" class="event-holder">
+    <article data-ng-show="isJoined(event)" class="event-holder">
       <section class="event-one">
         <div class="event-one__name">{{event.eName}}</div>
       </section>
@@ -33,9 +32,9 @@
     <section class="event-five">
       <div class="event-five__people">{{event.minNumber}}</div>
     </section>
-    <input data-ng-hide='isJoined(event)' data-ng-click="joinEvent(event)" type="button" class="join" name="join">
-    <h1 data-ng-click='joinEvent(event)' data-ng-hide='isJoined(event)' class="join-text">JOIN</h1>
-  </article>
+    <input data-ng-show='isJoined(event)' data-ng-click="unJoinEvent(event)" type="button" class="leave" name="join">
+    <h1 data-ng-click='unJoinEvent(event)' data-ng-show='isJoined(event)' class="leave-text">LEAVE</h1>
+    </article>
   </main>
   <nav class="mobile-bar">
     <ul class="mobile-bar__list">
@@ -46,5 +45,3 @@
     </ul>
   </nav>
 </div>
-
-

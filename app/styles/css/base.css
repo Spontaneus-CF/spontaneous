@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'teko';
+  src: url('../fonts/Teko 300.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'teko';
+  src: url('../fonts/Teko regular.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url('../fonts/Raleway regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url('../fonts/Raleway 600.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'molle italic';
+  src: url('../fonts/Molle italic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  border-style: none;
+  outline-style: none;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+html, body {
+  height: 100%;
+  background-color: #A8A8A8;
+}
+
+h1, h2, li, p {
+  color: white;
+}
+
+h1, h2 {
+  font-size: 3rem;
+  font-family: 'teko', sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+li, p, input, section{
+  font-family: 'raleway', sans-serif;
+}
+
+form {
+  border-radius: 0.3rem;
+}
+
+input {
+  width: 26rem;
+  height: 4.5rem;
+  font-size: 1.6rem;
+  padding: 0 0 0 1rem;
+}
+
+nav ul li {
+  height: 4.5rem;
+  font-size: 2.8rem;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: #AF2F2F;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 2px 2px 2px #888888;
+  top: 0;
+}
+

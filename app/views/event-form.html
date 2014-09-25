@@ -1,10 +1,30 @@
-<div data-ng-controller='eventsController'>
-  <form name='eventForm'>
-    <input type="text" required data-ng-model='event.eName' placeholder='Event Name'>
-    <input type="text" required data-ng-model='event.eLocation' placeholder='Event Address'>
-    <input type="text" required data-ng-model='event.eventTime' placeholder='Time event begins'>
-    <input type="text" required data-ng-model='event.maxNumber' placeholder='Max # of Attendees'>
-    <input type="text" required data-ng-model='event.minNumber' placeholder='Min # of Attendees'>
-  </form>
-  <button data-ng-click='submitForm()'>Submit Event</button>
+<div data-ng-controller='newEventController'>
+  <body>
+    <header>
+      <h1 class="sub-hdr hdr-host">CREATE EVENT</h1>
+      <a href="#"><img class="logo" src="images/logo.png"></a>
+      <div class="icon-user main-user"><span> {{userName}}</span></div>
+    </header>
+      <!-- <form method="get" class="search-main">
+        <input type="text" class="search-box2" size="" maxlength="120" placeholder="Search events">
+        <span class="icon-search"></span>
+      </form> -->
+    <article>
+      <form name="eventForm" role="form" class="host-form">
+        <input type="text" required data-ng-model="event.eName"placeholder="Event Name" class="host-form__one border-line" maxlength="15">
+        <input type="text" required data-ng-model="event.eLocation"placeholder="Location" class="host-form__two border-line" maxlength="15">
+        <input type="text" required data-ng-model="event.eventTime" placeholder="Time" class="host-form__three border-line">
+        <input type="text" required data-ng-model="event.minNumber"placeholder="No. of people" class="host-form__four border-line">
+        <input data-ng-click="submitForm()" type="submit" name="create-button" value="Create Event" class="host-form__submit">
+      </form>
+    </article>
+    <nav class="mobile-bar">
+      <ul class="mobile-bar__list">
+        <li class="mobile-bar__item"><span data-ng-click="newEvent()" class="icon-pencil"></span></li>
+        <li class="mobile-bar__item"><span data-ng-click="getEvents()" class="icon-compass"></span></li>
+        <li class="mobile-bar__item"><span data-ng-click="getActivities()" class="icon-user"></span></li>
+        <li class="mobile-bar__item"><span data-ng-click="logout()" class="icon-switch"></span></li>
+      </ul>
+    </nav>
+  </body>
 </div>

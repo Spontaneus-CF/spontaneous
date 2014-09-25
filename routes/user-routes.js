@@ -15,12 +15,11 @@ module.exports = function(app, passport){
         var newUser = new User();
         newUser.local.email = req.body.email;
         newUser.local.password = newUser.generateHash(req.body.password);
-        newUser.local.firstName = req.body.firstName;
-        newUser.local.lastName = req.body.lastName;
+        newUser.local.userName = req.body.userName;
 
         newUser.save(function(err, resUser){
           if (err) return res.status(500).json(err);
-          return res.status(200).json({'firstName': resUser.local.firstName,
+          return res.status(200).json({'userName': resUser.local.userName,
                                     'jwt': resUser.createToken(app)});
         });
       }
@@ -30,6 +29,6 @@ module.exports = function(app, passport){
   app.get(baseUrl, passport.authenticate('local', {session: false}), 
     function(req, res){
       return res.json({'jwt': req.user.createToken(app),
-                        'firstName': req.user.local.firstName});
+                        'userName': req.user.local.userName});
     });
 };

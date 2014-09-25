@@ -18,13 +18,14 @@ require('./directives/validate-password.js')(spontaneousApp);
 
 //Services
 require('./services/auth')(spontaneousApp);
+require('./services/footer')(spontaneousApp);
 
 spontaneousApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
-  .when('/home', {
-    templateUrl: 'views/home.html',
-    controller: 'homeController'
-  })
+  // .when('/home', {
+  //   templateUrl: 'views/home.html',
+  //   controller: 'homeController'
+  // })
   .when('/signin', {
     templateUrl: 'views/users.html',
     controller: 'usersController'

@@ -15,7 +15,7 @@ module.exports = function(app) {
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
-        $cookies.firstName = data.firstName;
+        $cookies.userName = data.userName;
         $location.path('/events');
         console.log('success');
       })
@@ -38,7 +38,7 @@ module.exports = function(app) {
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
-        $cookies.firstName = data.firstName;
+        $cookies.userName = data.userName;
         $location.path('/events'); //Specify needed from above
         console.log('success');
       })

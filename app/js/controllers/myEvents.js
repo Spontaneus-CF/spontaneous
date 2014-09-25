@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = function(app){
-  app.controller('myEvents', function($scope, $http, auth, $location, $cookies){
+  app.controller('myEvents', function($scope, $http, auth, $location, $cookies, footer){
     $scope.getMyEvents = function(){
       if (auth.sendJWT() === 'noauth') return false;
       $http({
@@ -19,6 +19,11 @@ module.exports = function(app){
       });
     };
     $scope.getMyEvents();
+
+    $scope.userName = $cookies.userName;
+    $scope.getEvents = footer.getEvents;
+    $scope.newEvent = footer.newEvent;
+    $scope.logout = footer.logout;
 
     $scope.joinEvent = function(event) {
       var i = event.attendees.indexOf($cookies.firstName);  

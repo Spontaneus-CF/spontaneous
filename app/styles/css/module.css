@@ -8,12 +8,12 @@ input {
 }
 
 .signup-body {
-  background-image: url("../images/golf.jpg");
+  background-image: url("../../images/golf.jpg");
   background-size: 120%;
 }
 
 .index-body {
-  background-image: url("../images/clubbing.jpg");
+  background-image: url("../../images/clubbing.jpg");
   background-size: 350%;
 }
 

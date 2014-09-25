@@ -12,19 +12,5 @@ module.exports = function(app){
 
     $scope.checkAuth();
 
-    $scope.firstName = $cookies.firstName;
-
-    $scope.getEvents = function(){
-      $location.path('/events');
-    };
-
-    $scope.newEvent = function(){
-      $location.path('/new-event');
-    };
-
-    $scope.logout = function(){
-      $cookies.jwt = null;
-      $location.path('/signin'); 
-    };
   });
 };

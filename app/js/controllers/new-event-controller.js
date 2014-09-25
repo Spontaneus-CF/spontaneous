@@ -11,7 +11,7 @@ module.exports = function(app){
         data: $scope.event
       })
       .success(function(data){
-        $location.path('/home');
+        $location.path('/activities');
         console.log('success');
       })
       .error(function(data){

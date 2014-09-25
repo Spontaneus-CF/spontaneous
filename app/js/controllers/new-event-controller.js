@@ -20,6 +20,7 @@ module.exports = function(app){
       });
     };
 
+    $scope.userName = $cookies.userName;
     $scope.getEvents = footer.getEvents;
     $scope.newEvent = footer.newEvent;
     $scope.logout = footer.logout;

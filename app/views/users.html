@@ -9,8 +9,8 @@
     <p class="intro-description">Connect with others. Fast.</p>
     <form role="form" class="main-form" name="newUserForm" data-ng-show="newUser" ng-submit="userForm.$valid">
       <input data-ng-model="user.email" type="email" placeholder="Email" class="main-form__email border-line" maxlength="30" autofocus required>
-      <input data-ng-model="user.userName" type="text" placeholder="Username" class="main-form__username border-line"maxlength="15" required>
-      <input data-ng-model="user.password" type="password" placeholder="Password" class="main-form__password" maxlength="15" required>
+      <input data-ng-model="user.userName" type="text" placeholder="Username" class="main-form__username border-line" maxlength="15" required>
+      <input data-ng-model="user.password" type="password" placeholder="Password" class="main-form__password border-line" maxlength="15" required>
       <input type="password" data-ng-model="user.passwordConfirmation" class="main-form__password" placeholder="Confirm your password"required>
       <div data-ng-validate-password data-ng-hide="validatePassword()">
 

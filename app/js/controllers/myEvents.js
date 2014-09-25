@@ -26,8 +26,8 @@ module.exports = function(app){
     $scope.logout = footer.logout;
 
     $scope.joinEvent = function(event) {
-      var i = event.attendees.indexOf($cookies.firstName);  
-      if (i === -1){  
+      var i = event.attendees.indexOf($cookies.firstName);
+      if (i === -1){
         event.attendees.push($cookies.firstName);
         $http({
           method: 'PUT',

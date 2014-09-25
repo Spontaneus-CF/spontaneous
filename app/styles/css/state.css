@@ -1,4 +1,14 @@
 @media (min-width: 50rem) {
+  .signup-body {
+    background-image: url("../images/golf.jpg");
+    background-size: 100%;
+  }
+
+  .index-body {
+    background-image: url("../images/clubbing.jpg");
+    background-size: 150%;
+  }
+
   .main-heading {
     font-size: 4rem;
     position: absolute;

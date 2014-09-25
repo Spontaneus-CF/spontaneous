@@ -2,7 +2,7 @@
   <header>
     <h1 class="sub-hdr hdr-explore">EXPLORE</h1>
     <a href="join.html"><img class="logo" src="images/logo.png"></a>
-    <div class="icon-user main-user"><span> Name<span></div>
+    <div class="icon-user main-user"><span> {{userName}}</span></div>
   </header>
   <form method="get" class="search-main">
     <input type="text" class="search-box2" size="" maxlength="120" placeholder="Search events">
@@ -41,10 +41,10 @@
   </main>
   <nav class="mobile-bar">
     <ul class="mobile-bar__list">
-      <li class="mobile-bar__item"><a data-ng-click="newEvent()" class="icon-pencil"></a></li>
-      <li class="mobile-bar__item"><a data-ng-click="getEvents()" class="icon-compass"></a></li>
-      <li class="mobile-bar__item"><a class="icon-user"></a></li>
-      <li class="mobile-bar__item"><a data-ng-click="logout()" class="icon-switch"></a></li>
+      <li class="mobile-bar__item"><a data-ng-click="newEvent()" class="icon-pencil" alt="create"></a></li>
+      <li class="mobile-bar__item"><a data-ng-click="getEvents()" class="icon-compass" alt="join"></a></li>
+      <li class="mobile-bar__item"><a class="icon-user" alt="activites"></a></li>
+      <li class="mobile-bar__item"><a data-ng-click="logout()" class="icon-switch" alt="log out"></a></li>
     </ul>
   </nav>
 </div>

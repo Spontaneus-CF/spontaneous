@@ -5,7 +5,7 @@ module.exports = function(app) {
     if($location.path() === '/signout') $cookies.jwt = null;
     if(!$cookies.jwt || $cookies.jwt.length >=10) return $location.path('/events');
 
-    if($location.path() === '/signin') $scope.newuser = true;
+    if($location.path() === '/signin') $scope.newUser = false;
 
     $scope.signin = function() {
       $http.defaults.headers.common.Authorization = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);

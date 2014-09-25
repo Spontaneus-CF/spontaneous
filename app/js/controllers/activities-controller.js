@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = function(app){
-  app.controller('eventsController', function($scope, $http, auth, $location, $cookies, footer){
+  app.controller('activitiesController', function($scope, $http, auth, $location, $cookies, footer){
     $scope.getMyEvents = function(){
       if (auth.sendJWT() === 'noauth') return false;
       $http({
@@ -31,18 +31,16 @@ module.exports = function(app){
       return (i === -1) ? false : true;
     };
 
-    $scope.joinEvent = function(event) {
+    $scope.unJoinEvent = function(event) { //refactor
       var i = event.attendees.indexOf($cookies.userName);
-      console.log('hello');
-      if (i === -1){
-        event.attendees.push($cookies.userName);
+      if (i !== -1){              // Checks to see if user is in attendees array before executing - maybe change this
+        event.attendees.splice(i, 1);
         $http({
           method: 'PUT',
           url:'/api/v_0_0_1/events/' + event._id,
           data: event
         })
         .success(function(data){
-          $location.path('/home'); // change path
           console.log(data);
           console.log('success');
         })

@@ -12,6 +12,10 @@ module.exports = function(app){
         $location.path('/new-event');
       },
 
+      getActivities: function(){
+        $location.path('/activities');
+      },
+      
       logout: function(){
         $cookies.jwt = null;
         $location.path('/signin'); 

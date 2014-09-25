@@ -30,11 +30,13 @@
     position: absolute;
     top: 8rem;
     left: calc(50% - 20rem);
+    bord
   }
 
   .host-form input {
     margin: 0 0 2.5rem 0;
     border-radius: 0.2rem;
+    border: none;
   }
 
   input {
@@ -51,7 +53,7 @@
   }
 
   .logo-main {
-    margin: 7rem auto 0 auto;
+    margin: 0 auto;
   }
 
   .mobile-bar {
@@ -68,8 +70,13 @@
   }
 
   .mobile-bar__item span {
-  color: white;
-  font-size: 2.3rem
+    color: white;
+    font-size: 2.3rem
+  }
+
+  .mobile-bar__item span:hover {
+    color: white;
+    font-size: 3rem;
   }
 
   .sortby {
@@ -89,10 +96,6 @@
   .event-list-activities {
     position: relative;
     top: 5rem;
-  }
-
-  .border-line {
-    border: none;
   }
 }
 

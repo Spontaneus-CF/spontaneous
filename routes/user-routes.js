@@ -30,5 +30,15 @@ module.exports = function(app, passport){
     function(req, res){
       return res.json({'jwt': req.user.createToken(app),
                         'userName': req.user.local.userName});
+  });
+
+  app.put(baseUrl + '/:id', jwauth, function(req, res){  // To update email address or password
+    var user = req.body;
+    delete user._id;
+    User.findOneAndUpdate({'_id': req.params.id}, user, function(err, resUser){
+      if(err) return res.status(500).json(err);
+      return res.status(202).json(resEvent);
     });
+  });
+
 };

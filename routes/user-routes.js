@@ -8,26 +8,26 @@ module.exports = function(app, passport){
   app.post(baseUrl, function(req, res){
     User.findOne({'local.email' : req.body.email}, function(err, user){
       if(err) return res.status(500).json(err);
+      if(user){
+        return res.status(401).json({'msg': 'cannot create user'});
+      } else {
 
-      if(user) return res.status(401).json({'msg': 'cannot create user'});
-    });
-
-    var newUser = new User();
-    newUser.local.email = req.body.email;
-    newUser.local.password = newUser.generateHash(req.body.password);
-    newUser.local.firstName = req.body.firstName;
-    newUser.local.lastName = req.body.lastName;
-
-    newUser.save(function(err, resUser){
-      if (err) return res.status(500).json(err);
-      return res.status(200).json({'firstName': resUser.local.firstName,
-                                  'jwt': resUser.createToken(app)});
+        var newUser = new User();
+        newUser.local.email = req.body.email;
+        newUser.local.password = newUser.generateHash(req.body.password);
+        newUser.local.userName = req.body.userName;
+        newUser.save(function(err, resUser){
+          if (err) return res.status(500).json(err);
+          return res.status(200).json({'firstName': resUser.local.userName,
+                                    'jwt': resUser.createToken(app)});
+        });
+      }
     });
   });
 
   app.get(baseUrl, passport.authenticate('local', {session: false}), 
     function(req, res){
       return res.json({'jwt': req.user.createToken(app),
-                        'firstName': req.user.local.firstName});
+                        'firstName': req.user.local.userName});
     });
 };

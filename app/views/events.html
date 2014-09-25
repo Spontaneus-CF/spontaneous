@@ -1,6 +1,6 @@
 <div data-ng-controller="myEvents">
   <div data-ng-repeat='event in events'>
-    {{event.eName}} {{event.eLocation}} {{event.eventTime}} {{event.maxNumber}} {{event.minNumber}} {{event.attendees}}
+    {{event.eName}} {{event.eLocation}}Time: {{event.eventTime}} {{event.maxNumber}} {{event.minNumber}} {{event.attendees}}
     <button data-ng-click="joinEvent(event)">Join UP! </button>
   </div>
 </div>

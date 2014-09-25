@@ -12,7 +12,7 @@ module.exports = function(app){
 
     $scope.checkAuth();
 
-    $scope.firstName = $cookies.firstName;
+    $scope.userName = $cookies.userName;
 
     $scope.getEvents = function(){
       $location.path('/events');

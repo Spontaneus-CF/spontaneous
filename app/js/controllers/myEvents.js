@@ -21,7 +21,7 @@ module.exports = function(app){
     $scope.getMyEvents();
 
     $scope.joinEvent = function(event) {
-      event.attendees.push($cookies.firstName);
+      event.attendees.push($cookies.userName);
       $http({
         method: 'PUT',
         url:'/api/v_0_0_1/events/' + event._id,

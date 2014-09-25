@@ -7,7 +7,7 @@ input {
   display: block;
 }
 
-/*.signup-body {
+.signup-body {
   background-image: url("../../images/golf.jpg");
   background-size: 120%;
 }
@@ -15,7 +15,7 @@ input {
 .index-body {
   background-image: url("../../images/clubbing.jpg");
   background-size: 350%;
-}*/
+}
 
 .logo-main {
   display: block;

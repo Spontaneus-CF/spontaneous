@@ -1,4 +1,4 @@
-@media (min-width: 50rem) {
+@media (min-width: 50rem) {/*
   .signup-body {
     background-image: url("../images/golf.jpg");
     background-size: 100%;
@@ -7,7 +7,7 @@
   .index-body {
     background-image: url("../images/clubbing.jpg");
     background-size: 150%;
-  }
+  }*/
 
   .main-heading {
     font-size: 4rem;
@@ -28,16 +28,22 @@
 
   .host-form {
     position: absolute;
-    top: 10rem;
+    top: 8rem;
     left: calc(50% - 20rem);
   }
 
   .host-form input {
     margin: 0 0 2.5rem 0;
+    border-radius: 0.2rem;
   }
 
   input {
     width: 40rem;
+  }
+
+  .host-form__submit,
+  .main-form__submit {
+    width: 41rem;
   }
 
   .intro-heading {
@@ -86,7 +92,7 @@
   }
 
   .border-line {
-    display: none;
+    border: none;
   }
 }
 

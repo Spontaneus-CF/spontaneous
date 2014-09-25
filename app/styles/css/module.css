@@ -7,7 +7,7 @@ input {
   display: block;
 }
 
-.signup-body {
+/*.signup-body {
   background-image: url("../../images/golf.jpg");
   background-size: 120%;
 }
@@ -15,7 +15,7 @@ input {
 .index-body {
   background-image: url("../../images/clubbing.jpg");
   background-size: 350%;
-}
+}*/
 
 .logo-main {
   display: block;
@@ -59,18 +59,17 @@ input {
 
 .main-form__submit,
 .host-form__submit {
-  width: 27rem;
-  height: 4.4rem;
   margin-top: 1rem;
   background-color:#AF2F2F;
   border-radius: 0.2rem;
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
+  width: 27rem;
 }
 
 .host-form {
-  margin: 6rem;
+  margin-top: 8rem;
 }
 
 .main-link {

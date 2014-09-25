@@ -3,7 +3,7 @@
 module.exports = function(app) {
   app.controller('usersController', function($scope, $http, $cookies, $base64, $location){
     if($location.path() === '/signout') $cookies.jwt = null;
-    if(!$cookies.jwt || $cookies.jwt.length >=10) return $location.path('/home'); 
+    if(!$cookies.jwt || $cookies.jwt.length >=10) return $location.path('/events');
 
     if($location.path() === '/signin') $scope.newuser = true;
 
@@ -16,7 +16,7 @@ module.exports = function(app) {
       .success(function(data){
         $cookies.jwt = data.jwt;
         $cookies.firstName = data.firstName;
-        $location.path('/home');
+        $location.path('/events');
         console.log('success');
       })
       .error(function(data){
@@ -39,7 +39,7 @@ module.exports = function(app) {
       .success(function(data){
         $cookies.jwt = data.jwt;
         $cookies.firstName = data.firstName;
-        $location.path('/home'); //Specify needed from above
+        $location.path('/events'); //Specify needed from above
         console.log('success');
       })
       .error(function(data){

@@ -1,7 +1,50 @@
 <div data-ng-controller="myEvents">
-  <div data-ng-repeat='event in events'>
-    {{event.eName}} {{event.eLocation}} {{event.eventTime}} {{event.maxNumber}} {{event.minNumber}} {{event.attendees}}
-    <button data-ng-click="joinEvent(event)">Join UP!</button>
-    <button data-ng-click="unJoinEvent(event)">Remove me</button>
-  </div>
+  <header>
+    <h1 class="sub-hdr hdr-explore">EXPLORE</h1>
+    <a href="join.html"><img class="logo" src="images/logo.png"></a>
+    <div class="icon-user main-user"><span> Name<span></div>
+  </header>
+  <form method="get" class="search-main">
+    <input type="text" class="search-box2" size="" maxlength="120" placeholder="Search events">
+    <span class="icon-search"></span>
+  </form>
+  <form method="post" class="sortby">
+  <select class="dropdown" name="Sort By">
+    <option value="event-type" class="dropdown__item">Event Type</option>
+    <option value="location" class="dropdown__item">Location</option>
+    <option value="time" class="dropdown__item">Time</option>
+  </select>
+  </form>
+  <main data-ng-repeat="event in events" class="event-list-join">
+    <article class="event-holder">
+      <section class="event-one">
+        <div class="event-one__name">{{event.eName}}</div>
+      </section>
+    <section class="event-two">
+      <div class="event-two__time">{{event.eventTime}}</div>
+    </section>
+    <section class="event-three">
+      <div class="event-three__date">{{event.today}}</div><!-- figure this out -->
+    </section>
+    <section class="event-four">
+      <div class="event-four__location">{{event.eLocation}}</td>
+    </section>
+    <section class="event-five">
+      <div class="event-five__people">{{event.minNumber}}</div>
+    </section>
+    <input data-ng-click="joinEvent(event)"type="button" class="join" name="join">
+    <h1 class="join-text">JOIN</h1>
+    <input data-ng-click="unJoinEvent(event)"type="button" class="join" name="join">
+    <h1 class="join-text">LEAVE</h1>
+    </article>
+
+  </main>
+  <nav class="mobile-bar">
+    <ul class="mobile-bar__list">
+      <li class="mobile-bar__item"><a data-ng-click="newEvent()" class="icon-pencil"></a></li>
+      <li class="mobile-bar__item"><a data-ng-click="getEvents()" class="icon-compass"></a></li>
+      <li class="mobile-bar__item"><a class="icon-user"></a></li>
+      <li class="mobile-bar__item"><a data-ng-click="logout()" class="icon-switch"></a></li>
+    </ul>
+  </nav>
 </div>

@@ -22,23 +22,23 @@ require('./services/auth')(spontaneousApp);
 spontaneousApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
   .when('/home', {
-    templateUrl: 'home.html',
+    templateUrl: 'views/home.html',
     controller: 'homeController'
   })
   .when('/signin', {
-    templateUrl: 'users.html',
+    templateUrl: 'views/users.html',
     controller: 'usersController'
   })
   .when('/new-event', {
-    templateUrl: 'event-form.html',
+    templateUrl: 'views/event-form.html',
     controller: 'eventsController'
   })
   .when('/events', {
-    templateUrl: 'events.html',
+    templateUrl: 'views/events.html',
     controller: 'myEvents'
   })
   .when('/unauthorized', {
-    templateUrl: 'unauth.html'
+    templateUrl: 'views/unauth.html'
   })
   .otherwise({
     redirectTo:'/signin'

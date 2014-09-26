@@ -15,13 +15,12 @@
       <input data-ng-model="user.email" type="email" placeholder="Email" class="main-form__email border-line" maxlength="30" autofocus required>
       <input data-ng-model="user.userName" type="text" placeholder="Username" class="main-form__username border-line" maxlength="15" required>
       <input data-ng-model="user.password" type="password" placeholder="Password" class="main-form__password border-line" maxlength="15" required>
-      <input type="password" data-ng-model="user.passwordConfirmation" class="main-form__password" placeholder="Confirm your password"required>
+      <input type="password" data-ng-model="user.passwordConfirmation" class="main-form__password2" placeholder="Confirm password"required>
       <div data-ng-validate-password data-ng-hide="validatePassword()">
 
       </div>
       <input data-ng-disabled="newUserForm.$invalid" data-ng-click="createNewUser()" class="main-form__submit" type="submit" name="submit-button" value="Start">
     </form>
-    <!-- class="main-link" -->
   </div>
   <div>
     <form name="userForm" data-ng-hide="newUser" ng-submit="userForm.$valid" class="main-form">

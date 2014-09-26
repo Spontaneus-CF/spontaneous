@@ -1,14 +1,10 @@
 <div data-ng-controller='newEventController'>
   <body>
     <header>
-      <h1 class="sub-hdr hdr-host">CREATE EVENT</h1>
+      <h1 class="sub-hdr hdr-host">CREATE</h1>
       <a href="#"><img class="logo" src="images/logo.png"></a>
       <div class="icon-user main-user"><span> {{userName}}</span></div>
     </header>
-      <!-- <form method="get" class="search-main">
-        <input type="text" class="search-box2" size="" maxlength="120" placeholder="Search events">
-        <span class="icon-search"></span>
-      </form> -->
     <article>
       <form name="eventForm" role="form" class="host-form">
         <input type="text" required data-ng-model="event.eName"placeholder="Event Name" class="host-form__one border-line" maxlength="15">

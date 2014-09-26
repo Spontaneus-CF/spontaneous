@@ -20,7 +20,7 @@
     position: absolute;
     top: 8rem;
     left: calc(50% - 20rem);
-    bord
+    border: 5rem;
   }
 
   .host-form input {

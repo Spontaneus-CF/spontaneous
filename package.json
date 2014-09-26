@@ -20,7 +20,9 @@
     "gulp-karma": "0.0.4",
     "gulp-rename": "^1.2.0",
     "gulp-rimraf": "^0.1.0",
-    "karma": "^0.12.23"
+    "karma": "^0.12.23",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5"
   },
   "dependencies": {
     "bcrypt-nodejs": "latest",

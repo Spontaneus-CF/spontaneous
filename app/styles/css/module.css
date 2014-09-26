@@ -17,7 +17,7 @@ input {
   margin: auto;
   width: 10rem;
   height: 14rem;
-  margin-top: 0rem;
+  padding-top: 10rem;
 }
 
 .logo {
@@ -213,7 +213,7 @@ input {
 }
 
 .event-two{
-  width: 6rem;
+  width: 50%;
 }
 
 .event-three{

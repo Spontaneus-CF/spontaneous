@@ -12,9 +12,7 @@ describe('spontaneousApp', function() {
   }));
 
   it('should be able to create a new controller', function(){
-    var usersController = $controllerConstructor('usersController', {$scope: scope});
-    expect(typeof usersController).toBe('object');
+    var activitiesController = $controllerConstructor('activitiesController', {$scope: scope});
+    expect(typeof activitiesController).toBe('object');
   });
-
-
 });

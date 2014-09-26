@@ -51,8 +51,8 @@ gulp.task('brow', ['clean'], function() {
 
 });
 
-gulp.task('karma', ['testBrow'], function() {
-    return gulp.src('./test/testBundle.js')
+gulp.task('karma', function() {
+    return gulp.src('./testBundle.js')
     .pipe(karma({
       configFile: 'karma.config.js',
       action: 'run'
@@ -64,7 +64,7 @@ gulp.task('karma', ['testBrow'], function() {
 
 
 gulp.task('testBrow', ['testClean'], function() {
-  var c = brow('./test/angular/user-controller-test.js')
+  var c = brow('./test/angular/all-test.js')
     .transform('debowerify');
 
   var stream = c.bundle('testBundle.js');
@@ -74,7 +74,7 @@ gulp.task('testBrow', ['testClean'], function() {
 });
 
 gulp.task('default', ['clean', 'copy', 'lint', 'brow']);
-gulp.task('test', ['testClean', 'testBrow', 'karma']);
+gulp.task('test', ['testClean', 'testBrow']);
   // gulp.watch([paths.app, paths.view, paths.styles, paths.index], function() {
   //   gulp.run('clean', 'lint', 'copy', 'brow');
   // });

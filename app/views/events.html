@@ -31,7 +31,7 @@
       <div class="event-four__location">{{event.eLocation}}</td>
     </section>
     <section class="event-five">
-      <div class="event-five__people">{{event.minNumber}}</div>
+      <div class="event-five__people">{{event.attendees.length}}/{{event.minNumber}}</div>
     </section>
     <input data-ng-hide='isJoined(event)' data-ng-click="joinEvent(event)" type="button" class="join" name="join">
     <h1 data-ng-click='joinEvent(event)' data-ng-hide='isJoined(event)' class="join-text">JOIN</h1>

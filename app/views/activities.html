@@ -20,22 +20,23 @@
       <section class="event-one">
         <div class="event-one__name">{{event.eName}}</div>
       </section>
-    <section class="event-two">
-      <div class="event-two__time">{{event.eventTime}}</div>
-    </section>
-    <section class="event-three">
-      <div class="event-three__date">{{event.today}}</div><!-- figure this out -->
-    </section>
-    <section class="event-four">
-      <div class="event-four__location">{{event.eLocation}}</td>
-    </section>
-    <section class="event-five">
-      <div class="event-five__people">{{event.minNumber}}</div>
-    </section>
-    <input data-ng-show='isJoined(event)' data-ng-click="unJoinEvent(event)" type="button" class="leave" name="join">
-    <h1 data-ng-click='unJoinEvent(event)' data-ng-show='isJoined(event)' class="leave-text">LEAVE</h1>
+      <section class="event-two">
+        <div class="event-two__time">{{event.eventTime}}</div>
+      </section>
+      <section class="event-three">
+        <div class="event-three__date">{{event.today}}</div><!-- figure this out -->
+      </section>
+      <section class="event-four">
+        <div class="event-four__location">{{event.eLocation}}</td>
+      </section>
+      <section class="event-five">
+        <div class="event-five__people">{{event.minNumber}}</div>
+      </section>
+      <input data-ng-show='isJoined(event)' data-ng-click="unJoinEvent(event)" type="button" class="leave" name="join">
+      <h1 data-ng-click='unJoinEvent(event)' data-ng-show='isJoined(event)' class="leave-text">LEAVE</h1>
     </article>
   </main>
+  <div clas="bottom-space"></div>
   <nav class="mobile-bar">
     <ul class="mobile-bar__list">
       <li class="mobile-bar__item"><span data-ng-click="newEvent()" class="icon-pencil" alt="create"></span></li>

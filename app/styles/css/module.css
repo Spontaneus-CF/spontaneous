@@ -12,11 +12,6 @@ input {
   background-size: 120%;
 }
 
-.index-body {
-  background-image: url("../../images/clubbing.jpg");
-  background-size: 350%;
-}
-
 .logo-main {
   display: block;
   margin: auto;
@@ -126,13 +121,13 @@ input {
 
 .mobile-bar__item {
   display: inline-block;
-  padding: 0 8.5%;
   line-height: 5.5rem;
 }
 
 .mobile-bar__item span {
   color: #A8A8A8;
   cursor: pointer;
+  padding: 0 7vw;
 }
 
 .mobile-bar__item span:hover {
@@ -289,3 +284,14 @@ font-size: 2rem;
   right: 2.8rem;
   bottom: 2.8rem;
 }
+
+/*.bottom-space {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  background-color: white;
+  bottom: 0;
+  margin-bottom: 0;
+  z-index: -2;
+}*/

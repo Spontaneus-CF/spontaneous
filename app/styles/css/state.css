@@ -1,14 +1,4 @@
-@media (min-width: 50rem) {/*
-  .signup-body {
-    background-image: url("../images/golf.jpg");
-    background-size: 100%;
-  }
-
-  .index-body {
-    background-image: url("../images/clubbing.jpg");
-    background-size: 150%;
-  }*/
-
+@media screen and (min-width: 50rem) {
   .main-heading {
     font-size: 4rem;
     position: absolute;
@@ -66,12 +56,13 @@
 
   .mobile-bar__item {
     line-height: 4.5rem;
-    padding: .3rem 6%;
+    display: inline-block;
   }
 
   .mobile-bar__item span {
     color: white;
-    font-size: 2.3rem
+    font-size: 2.3rem;
+    padding: .3rem 1.5rem;
   }
 
   .mobile-bar__item span:hover {
@@ -99,7 +90,7 @@
   }
 }
 
-@media (min-width: 70rem) {
+@media screen and (min-width: 70rem) {
   .event-holder {
     width: 28.3%;
   }

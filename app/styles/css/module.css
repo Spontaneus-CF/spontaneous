@@ -167,7 +167,7 @@ input {
   cursor: pointer;
 }
 
-.main-user span{
+.main-user span {
   font-family: "raleway", sans-serif;
   font-weight: bold;
 }
@@ -212,11 +212,11 @@ input {
   width: 95%;
 }
 
-.event-two{
+.event-two {
   width: 50%;
 }
 
-.event-three{
+.event-three {
   width: 60%;
   text-align: left;
 }
@@ -284,14 +284,3 @@ font-size: 2rem;
   right: 2.8rem;
   bottom: 2.8rem;
 }
-
-/*.bottom-space {
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 5rem;
-  background-color: white;
-  bottom: 0;
-  margin-bottom: 0;
-  z-index: -2;
-}*/

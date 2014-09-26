@@ -21,9 +21,9 @@ input {
 }
 
 .logo {
-  height: 5rem;
-  width: 5rem;
-  margin: 0 1rem;
+  height: 6rem;
+  width: 6rem;
+  margin: -.9rem 0.7rem;
   display: inline-block;
 }
 
@@ -41,13 +41,15 @@ input {
 }
 
 .main-form__start,
-.host-form__one {
+.host-form__one,
+.main-form__email {
   border-top-right-radius: 0.2rem;
   border-top-left-radius: 0.2rem;
 }
 
-.main-form__end
-.host-form__four {
+.main-form__end,
+.host-form__four,
+.main-form__password2 {
   border-bottom-right-radius: 0.2rem;
   border-bottom-left-radius: 0.2rem;
 }

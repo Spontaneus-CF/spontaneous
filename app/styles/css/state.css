@@ -1,5 +1,4 @@
 @media screen and (min-width: 768px) {
-
   body {
     background-size: 100% !important;
   }
@@ -26,6 +25,8 @@
     top: 8rem;
     left: calc(50% - 20rem);
     border: 5rem;
+    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
   }
 
   .host-form input {
@@ -87,6 +88,8 @@
   .event-holder {
     width: 45%;
     margin: 2.5%;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
   }
 
   .event-list-activities {

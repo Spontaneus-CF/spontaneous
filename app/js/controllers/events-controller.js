@@ -42,7 +42,6 @@ module.exports = function(app){
           data: event
         })
         .success(function(data){
-          $location.path('/home'); // change path
           console.log(data);
           console.log('success');
         })

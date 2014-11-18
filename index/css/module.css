@@ -1,0 +1,258 @@
+h1, p, form, button {
+  text-align: center;
+}
+
+input {
+  margin: 0 auto;
+  display: block;
+}
+
+.signup-body {
+  background-image: url("../images/golf.jpg");
+  background-size: 120%;
+}
+
+.index-body {
+  background-image: url("../images/clubbing.jpg");
+  background-size: 350%;
+}
+
+.logo-main {
+  display: block;
+  margin: auto;
+  width: 10rem;
+  height: 14rem;
+  margin-top: 7rem;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+.intro-heading {
+  margin-bottom: 0;
+}
+
+.intro-description {
+  font-size: 1.8rem;
+  margin: 0 0 2rem 0;
+}
+
+.border-line {
+  border-bottom: 0.1rem solid #E0E0E0;
+}
+
+.main-form__start,
+.host-form__one {
+  border-top-right-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+}
+
+.main-form__end
+.host-form__four {
+  border-bottom-right-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.main-form__submit,
+.host-form__submit {
+  width: 27rem;
+  height: 4.4rem;
+  margin-top: 1rem;
+  background-color:#AF2F2F;
+  border-radius: 0.2rem;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.host-form {
+  margin: 3rem;
+}
+
+.main-link {
+  display: block;
+  text-align: center;
+  width: 8rem;
+  height: 4.5rem;
+  padding: 0 1rem;
+  background-color: rgba(255,255,255,0.33);
+  color: white;
+  line-height: 4.5rem;
+  border-radius: 0.2rem;
+  font-family: "raleway", sans-serif;
+  font-size: 1.6rem;
+  margin: 0 0 1rem 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.search-box,
+.search-box2 {
+  margin-left: 1.2rem;
+  border-radius: 0.2rem;
+  height: 2.5rem;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.search-box {
+  margin-top: 1rem;
+  width: 26rem;
+}
+
+.search-box2 {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.mobile-bar {
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  background-color: #282828;
+  bottom: 0;
+}
+
+.mobile-bar__list {
+  text-align: center;
+  padding: 0;
+}
+
+.mobile-bar__item {
+  display: inline-block;
+  padding: 0 8.5%;
+  line-height: 5.5rem;
+}
+
+.mobile-bar__item a {
+  color: #A8A8A8;
+}
+
+.dropdown {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 95%;
+  height: 4rem;
+  font-size: 1.6rem;
+  opacity: 0.8;
+}
+
+.icon-search {
+  font-size: 1.5rem;
+  position: relative;
+  right: 3rem;
+  opacity: 0.5;
+}
+
+.main-user {
+  position: relative;
+  display: inline;
+  float: right;
+  margin-top: -4rem;
+  margin-right: 1rem;
+  font-size: 2.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.main-user span{
+  font-family: "raleway", sans-serif;
+  font-weight: bold;
+}
+
+.sub-hdr {
+  position: absolute;
+  font-size: 3rem;
+  top: .5rem;
+  }
+
+.hdr-explore {
+  left: calc(50% - 4rem);
+}
+
+.hdr-host {
+  left: calc(50% - 1.8rem);
+}
+
+.hdr-activities {
+  left: calc(50% - 4.8rem);
+}
+
+.event-holder {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  float: left;
+  padding: 1rem 0;
+  border-top: 0.5rem solid grey;
+}
+
+.event-holder section {
+  font-size: 2rem;
+  font-weight: normal;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  color: #404040;
+}
+
+.event-one {
+  width: 95%;
+}
+
+.event-two{
+  width: 6rem;
+}
+
+.event-three{
+  width: 60%;
+  text-align: left;
+}
+
+.event-four {
+  width: 80%;
+}
+
+.event-five {
+  width: 30%;
+}
+
+.event-one__name {
+font-weight: bold;
+font-size: 2rem;
+}
+
+.event-five__people {
+  color: #9B0B12;
+  font-size: 5rem;
+}
+
+.join,
+.join-text {
+  position: absolute;
+}
+
+.join {
+  width: 10rem;
+  height: 10rem;
+  border: .5rem solid grey;
+  border-radius: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: #E0E0E0;
+  cursor: pointer;
+}
+
+.join-text {
+  color: #AF2F2F;
+  right: 3.3rem;
+  bottom: 2.8rem;
+  font-size: 4rem;
+  cursor: pointer;
+}

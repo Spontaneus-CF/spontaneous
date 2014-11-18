@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'ico-fonts';
+	src:url('fonts/ico-fonts.eot?q07q4h');
+	src:url('fonts/ico-fonts.eot?#iefixq07q4h') format('embedded-opentype'),
+		url('fonts/ico-fonts.woff?q07q4h') format('woff'),
+		url('fonts/ico-fonts.ttf?q07q4h') format('truetype'),
+		url('fonts/ico-fonts.svg?q07q4h#ico-fonts') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'ico-fonts';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+	content: "\e603";
+}
+.icon-compass:before {
+	content: "\e604";
+}
+.icon-user:before {
+	content: "\e600";
+}
+.icon-spinner:before {
+	content: "\e605";
+}
+.icon-search:before {
+	content: "\e601";
+}
+.icon-switch:before {
+	content: "\e606";
+}
+.icon-close:before {
+	content: "\e607";
+}
+.icon-checkmark:before {
+	content: "\e602";
+}

@@ -1,0 +1,84 @@
+@media (min-width: 50rem) {
+  .main-heading {
+    font-size: 4rem;
+    position: absolute;
+    top: .15rem;
+  }
+
+  .search-main {
+    position: absolute;
+    right: 15rem;
+    top: -4.8rem;
+    z-index: 1;
+  }
+
+  .search-box2 {
+    width: 17vw;
+  }
+
+  .host-form {
+    position: absolute;
+    top: 10rem;
+    left: calc(50% - 20rem);
+  }
+
+  .host-form input {
+    margin: 0 0 2.5rem 0;
+    width: 40rem;
+  }
+
+  input {
+    width: 40rem;
+  }
+
+  .intro-heading {
+    margin: 0;
+  }
+
+  .logo-main {
+    margin: 7rem auto 0 auto;
+  }
+
+  .mobile-bar {
+    width: 24rem;
+    top: 0;
+    left: 10rem;
+    z-index: 1;
+    background-color: #AF2F2F;
+  }
+
+  .mobile-bar__item {
+    line-height: 4.5rem;
+    padding: .3rem 6%;
+  }
+
+  .mobile-bar__item a {
+  color: white;
+  font-size: 2.3rem
+  }
+
+  .sortby {
+    position: relative;
+    top: 7rem;
+  }
+
+  .event-list-join {
+    margin-top: 7rem;
+  }
+
+  .event-holder {
+    width: 45%;
+    margin: 2.5%;
+  }
+
+  .event-list-activities{
+    position: relative;
+    top: 5rem;
+  }
+}
+
+@media (min-width: 70rem) {
+  .event-holder {
+    width: 28.3%;
+  }
+}
